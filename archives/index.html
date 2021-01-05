@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="Gridea静态个人博客">
+<meta name="description" content="大一学生自己的博客">
+<meta name="theme-color" content="#222">
+<title>toby的博客</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1609811955817">
+<link rel="stylesheet" href="/styles/main.css">
+<link rel="stylesheet" href="/media/css/pisces.css">
+
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link
+  href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+
+<link href="/media/hljs/styles/androidstudio.css"
+  rel="stylesheet">
+
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"></script>
+
+
+
+
+<script>
+  var _hmt = _hmt || [];
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?cc357cbada22357d53582545cf736619";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+  <meta name="description" content="大一学生自己的博客">
+</head>
+
+<body>
+  <div class="head-top-line"></div>
+  <div class="header-box">
+    
+<div class="pisces">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>toby的博客</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">精于心，简于形</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/" target="_self">
+                  <i class="fa fa-home"></i> 首页
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item nav-item-active">
+              
+              
+                <a href="/archives/" target="_self">
+                  <i class="fa fa-archive"></i> 归档
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/tags/" target="_self">
+                  <i class="fa fa-tags"></i> 标签
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="https://book.tobyblog.cn/" target="_self">
+                  <i class="fa fa-globe"></i> 参考资料
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="http://121.199.50.67:80/" target="_self">
+                  <i class="fa fa-globe"></i> 摄影作品
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/post/about/" target="_self">
+                  <i class="fa fa-user"></i> 关于
+                </a>
+              
+            </li>
+          
+          
+            
+              <li class="nav-item ">
+                <a href="/friends/" target="_self">
+                  
+                    ⛵️友情链接
+                  
+                </a>
+              </li>
+            
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+  </div>
+  <div class="main-continer">
+    
+    <div
+      class="section-layout  pisces">
+      <div class="section-layout-wrapper">
+        <div id="sidebarMeta" class="sidebar">
+    
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name">toby</p>
+    
+    <div class="site-description right-motion">
+      
+        <p id="binft">台州学院大一学生，自己的博客</p>
+      
+    </div>
+    
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">5</span>
+        <span class="site-item-stat-name">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">0</span>
+        <span class="site-item-stat-name">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">0</span>
+        <span class="site-item-stat-name">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+  
+  
+    <div class="sidebar-item sidebar-item-social">
+      <div class="social-item">
+        
+          
+            <a href="https://space.bilibili.com/28003538">
+              <i class="fa fa-thumbs-up" title="b站"></i>
+            </a>
+          
+        
+        
+          
+            <a class="social-img" href="#">
+              <img src="/media/images/custom-array-imgSocials-1588230341338-socialImg.jpg" />
+              <i class="fa fa-wechat" title="微信" ></i>
+            </a>
+          
+            <a class="social-img" href="#">
+              <img src="/media/images/custom-array-imgSocials-1588230341339-socialImg.jpg" />
+              <i class="fa fa-qq" title="qq" ></i>
+            </a>
+          
+        
+      </div>
+    </div>
+  
+
+
+</div>
+</div>
+<script>
+  let sidebarMeta = document.querySelector('#sidebarMeta');
+  let scheme = 'pisces';
+  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
+  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
+    document.addEventListener('scroll', function(e) {
+      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
+        sidebarWrapper.classList.add('home-sidebar-fixed')
+      } else {
+        sidebarWrapper.classList.remove('home-sidebar-fixed')
+      }
+    });
+  }
+  </script>
+        <div class="section-box box-shadow-wrapper">
+          <section class="section archives-section bg-color posts-expand">
+            
+
+<div class="bg-color">
+  <div class="archive-timeline-box">
+    <div class="archive-timeline-title">
+      
+        <h2>非常好！目前共计5篇日志，继续努力！</h2>
+      
+    </div>
+    
+      
+      
+        <div class="node-title">
+          <h2 class="tag-year">2020</h2>
+        </div>    
+        
+      
+      <a href="https://tjx158589.github.io/post/cD7xvp1nC/">
+        <div class="motion-warpper tag-archive-node">
+          <div class="tag-node">
+            <h1>
+              05-23
+              <small>arp欺骗+Driftnet 局域网截取照片</small>
+            </h1>
+          </div>  
+      </div>
+      </a>
+    
+      
+      
+      <a href="https://tjx158589.github.io/post/ge4jbtkcR/">
+        <div class="motion-warpper tag-archive-node">
+          <div class="tag-node">
+            <h1>
+              05-16
+              <small>小米路由器min刷breed+padavan固件</small>
+            </h1>
+          </div>  
+      </div>
+      </a>
+    
+      
+      
+      <a href="https://tjx158589.github.io/post/dO60L6gOU/">
+        <div class="motion-warpper tag-archive-node">
+          <div class="tag-node">
+            <h1>
+              05-01
+              <small>一张图学会使用git</small>
+            </h1>
+          </div>  
+      </div>
+      </a>
+    
+      
+      
+      <a href="https://tjx158589.github.io/post/DxtlyjtyA/">
+        <div class="motion-warpper tag-archive-node">
+          <div class="tag-node">
+            <h1>
+              04-28
+              <small>typora 使用方法</small>
+            </h1>
+          </div>  
+      </div>
+      </a>
+    
+      
+      
+      <a href="https://tjx158589.github.io/post/hugogithua-bo-ke-da-jian-md/">
+        <div class="motion-warpper tag-archive-node">
+          <div class="tag-node">
+            <h1>
+              04-27
+              <small>hugo+github博客搭建</small>
+            </h1>
+          </div>  
+      </div>
+      </a>
+    
+  </div>
+  
+<div class="page bg-color">
+  <ul class="pagination-ul">
+    
+    
+      
+        <li class="pagination-li pagination-active">
+            <a href="/archives/page/../">
+              1
+            </a>
+        </li>
+      
+    
+    
+  </ul>
+</div>
+</div>
+
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By <a href="https://github.com/hsxyhao/gridea-theme-next" target="_blank">HsxyHao</a>
+    </div>
+    <div class="poweredby">
+      技术支持 <a href="https://github.com/tjx158589/tjx158589.github.io">Gridea</a>
+    </div>
+  </footer>
+  
+  
+  <div class="pisces back-to-top" id="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+    
+    <span class="scrollpercent">
+      <span id="back_to_top_text">0</span>%
+    </span>
+    
+  </div>
+  
+    <div class="bg-img">
+      <img src="/media/images/custom-bgImg.jpg" />
+    </div>
+  
+  
+  
+    
+  <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://player.lmih.cn/player/js/player.js" id="myhk" key="demo" m="1"></script>
+
+
+  
+</div>
+<script>
+
+  let sideBarOpen = 'sidebar-open';
+  let body = document.body;
+  let back2Top = document.querySelector('#back_to_top'),
+  back2TopText = document.querySelector('#back_to_top_text'),
+  drawerBox = document.querySelector('#drawer_box'),
+  rightSideBar = document.querySelector('.sidebar'),
+  viewport = document.querySelector('body');
+
+  function scrollAnimation(currentY, targetY) {
+   
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function(e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+  
+  window.addEventListener('scroll', function(e) {
+    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+  
+  let hasCacu = false;
+  window.onresize = function() {
+    if (window.width > 991) {
+      calcuHeight();
+    } else {
+      hasCacu = false;
+    }
+  }
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
+      let sideBar = document.querySelector('.sidebar');
+      let navUl = document.querySelector('#site_nav');
+      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+  
+  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll('.right-motion');
+    let right = drawerBox.classList.contains('right');
+
+    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingRight: '0px'
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingLeft: '0px'
+      };
+    }
+
+    drawerBox.onclick = function() {
+      open = !open;
+      window.Velocity(rightSideBar, 'stop');
+      window.Velocity(viewport, 'stop');
+      window.Velocity(rightMotions, 'stop');
+      if (open) {
+        window.Velocity(rightSideBar, {
+          width: RIGHT_MOVE_DIS
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, transitionDir,{ });
+          }
+        })
+        window.Velocity(viewport, openProp,{
+          duration: MOTION_TIME
+        });
+      } else {
+        window.Velocity(rightSideBar, {
+          width: '0px'
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, {
+              opacity: 0
+            });
+          }
+        })
+        window.Velocity(viewport, closeProp ,{
+          duration: MOTION_TIME
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle('muse-line');
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    }
+  }
+
+  // 链接跳转
+  let newWindow = 'true'
+  if (newWindow === 'true') {
+    let links = document.querySelectorAll('.post-body a')
+    links.forEach(item => {
+      if (!item.classList.contains('btn')) {
+        item.setAttribute("target","_blank");
+      }
+    })
+  }
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+
+</script>
+  </div>
+</body>
+<input hidden id="copy" />
+<script>
+  //拿来主义(真香)^_^，Clipboard 实现摘自掘金 https://juejin.im/post/5aefeb6e6fb9a07aa43c20af
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        console.log('复制操作频率过高');
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+</script>
+<script src="/media/js/motion.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 500
+  });
+</script>
+
+<!-- <div class="search-mask" id="search_mask">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input type="text" placeholder="搜索">
+      </div>
+      <i class="fa fa-times-circle"></i>
+    </div>
+    <div class="result">
+      
+      <div class="item">
+        <a class="result-title" href="https://tjx158589.github.io/post/cD7xvp1nC/"" data-c="
+          &lt;p&gt;、### 其实这个也是非常简单，只有三句命令就可以实现。没啥技术难度，不过只能在局域网内实现。&lt;/p&gt;
+&lt;h5 id=&#34;1-更改转发模式&#34;&gt;1、更改转发模式&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;echo 1 &amp;gt; /proc/sys/net/ipv4/ip_forward
+&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1gf2q4h2n18j30vv0u07wh.jpg&#34; alt=&#34;image-20200523215235878&#34; style=&#34;zoom:67%;&#34; /&gt;
+&lt;!-- more --&gt;
+&lt;h5 id=&#34;2-arp攻击&#34;&gt;2、arp攻击&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt; arpspoof -i eth0 -t 192.168.1.1  192.168.1.100
+ 
+#arpspoof -i eth0 -t [路由器ip] [目标主机ip]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;192.168.123.1&lt;/code&gt;是我路由器地址，&lt;code&gt;192.168.123.116&lt;/code&gt;是我笔记本的地址&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1gf2pnalgspj30vq0u01ky.jpg&#34; alt=&#34;image-20200523213603947&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;h5 id=&#34;3-数据还原分析&#34;&gt;3、数据还原分析&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;# driftnet -i eth0
+//eth0是网卡
+&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1gf2proex9tj30u00vy7wh.jpg&#34; alt=&#34;image-20200523214018000&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;h6 id=&#34;参数命令&#34;&gt;参数命令&lt;/h6&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;-b&lt;/code&gt; ：捕获到新的图片时发出嘟嘟声&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-i interface&lt;/code&gt; ：选择监听接口&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-f file&lt;/code&gt;：读取一个指定pcap数据包中的图片&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-p&lt;/code&gt; ：不让所监听的接口使用混杂模式&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-a&lt;/code&gt; ：后台模式：将捕获的图片保存到目录中（不会显示在屏幕上）&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-m number&lt;/code&gt; ：指定保存图片数的数目&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-d directory&lt;/code&gt; ：指定保存图片的路径&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-x prefix&lt;/code&gt;：指定保存图片的前缀名&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;结果&#34;&gt;结果：&lt;/h3&gt;
+&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1gf2pzieux9j31400u0qv8.jpg&#34; alt=&#34;41590241281_.pic_hd&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;左边电脑是被攻击者，右边窗口中的图片就是截取被攻击者网络数据包中抓取的图片&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1gf2q2mw4k2j30u00v5qv5.jpg&#34; alt=&#34;image-20200523215050019&#34; style=&#34;zoom:67%;&#34; /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;截取的所有照片都会在文件夹中显示&lt;/p&gt;
+&lt;/blockquote&gt;
+">arp欺骗+Driftnet 局域网截取照片</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://tjx158589.github.io/post/ge4jbtkcR/"" data-c="
+          &lt;h2 id=&#34;11-下载软件包&#34;&gt;1.1 下载软件包&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://ww.lanzous.com/icnbsih&#34;&gt;点我下载  链接：https://ww.lanzous.com/icnbsih&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;下载后首先进行解压缩，解压缩请使用鼠标右键解压到某路径，别直接双击打开压缩包。&lt;/p&gt;
+&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geuohzxg2bj30lg0o8499.jpg&#34; alt=&#34;image-20200516225150019&#34; style=&#34;zoom: 50%;&#34; /&gt;
+&lt;/blockquote&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;解压缩后得到如图所示5个文件&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geupzmfettj30f207w0t9.jpg&#34; alt=&#34;QQ截图20200516234048&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;分别如下：&lt;br&gt;
+breed底层系统 【breed-mt7620-xiaomi-mini.bin】&lt;br&gt;
+小米mini开发板固件【miwifi_r1cm_firmware_2e9b9_2.21.109】&lt;br&gt;
+小米mini Pandorabox固件【PandoraBox-ralink-mt7620-xiaomi-mini-2017-09-27-git-f18401e-squashfs-sysupgrade.bin】PuTTY虚拟终端【putty.exe】&lt;br&gt;
+SSH客户端【WinSCP-5.13.4-Setup.exe】&lt;/p&gt;
+&lt;p&gt;其中SSH客户端直接进行安装，安装过程配置不更改，默认选项即可。&lt;/p&gt;
+&lt;h2 id=&#34;12-更新官方开发板系统&#34;&gt;1.2 更新官方开发板系统&lt;/h2&gt;
+&lt;p&gt;如下图连接路由器后进入管理地址选择系统升级，手动升级，选择压缩包内的小米mini开发板固件【miwifi_r1cm_firmware_2e9b9_2.21.109】进行升级。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geuoihsy1nj31dm0me46y.jpg&#34; alt=&#34;image-20200516225221699&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;13-获取ssh权限&#34;&gt;1.3 获取SSH权限&lt;/h2&gt;
+&lt;p&gt;更新后手机下载小米Wifi APP，将小米mini路由器和手机APP登陆的小米账号绑定，绑定后访问下面地址&lt;br&gt;
+https://d.miwifi.com/rom/ssh&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geuoivwlfej31fa0sqqa9.jpg&#34; alt=&#34;image-20200516225243937&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;如图所示，此处即可看到绑定的路由器名字，root密码&lt;/p&gt;
+&lt;p&gt;接下来进行如下操作：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;请将下载的工具包bin文件复制到U盘（FAT/FAT32格式）的根目录下，保证文件名为miwifi_ssh.bin；&lt;/li&gt;
+&lt;li&gt;断开小米mini路由器的电源，将U盘插入USB接口；&lt;/li&gt;
+&lt;li&gt;按住reset按钮(路由器背后的小孔)之后重新接入电源，指示灯变为黄色闪烁状态即可松开reset键；&lt;/li&gt;
+&lt;li&gt;等待3-5秒后安装完成之后，小米路由器会自动重启，之后您就获得了路由器的SSH权限。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;14-刷入breed&#34;&gt;1.4 刷入breed&lt;/h2&gt;
+&lt;p&gt;如下图，打开之前安装的WinScp客户端，按照图中内容填写，其中密码是之前页面的root密码。&lt;/p&gt;
+&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geuoj9abr0j31f20mwnan.jpg&#34; alt=&#34;image-20200516225306227&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;p&gt;登陆过程中可能会有警告提示，点击更新即可。&lt;/p&gt;
+&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geuojnyowuj30w00og7bo.jpg&#34; alt=&#34;image-20200516225329500&#34; style=&#34;zoom: 33%;&#34; /&gt;
+&lt;p&gt;进入后默认是/root/目录，点击下图按钮进入根目录&lt;/p&gt;
+&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geuok71231j31970u0qk5.jpg&#34; alt=&#34;image-20200516225400073&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;p&gt;双击进入tmp目录，如下图：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geuokzfk73j319u0u0e30.jpg&#34; alt=&#34;image-20200516225444765&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;将之前解压的文件breed-mt7620-xiaomi-mini.bin拖入tmp文件夹中，如下图，&lt;/p&gt;
+&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geupjemp4zj31eq0lsqmo.jpg&#34; alt=&#34;image-20200516232750498&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;p&gt;在tmp中可以看到breed文件即可，如下图，&lt;/p&gt;
+&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geupmzhh3yj31a00u0b0d.jpg&#34; alt=&#34;image-20200516233116854&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;p&gt;此时打开压缩包中的PuTTY，如下图填写，&lt;/p&gt;
+&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geupnt8aq3j30qo0okwgz.jpg&#34; alt=&#34;image-20200516233204370&#34; style=&#34;zoom: 50%;&#34; /&gt;
+&lt;p&gt;警告点击“是”&lt;/p&gt;
+&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geupovsd7xj31f20rctk1.jpg&#34; alt=&#34;image-20200516233305727&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;p&gt;此处用户名是root，密码是小米路由器SSH权限管理界面的root密码&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;5&#34;&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geuppa3o0aj31f00cwad4.jpg&#34; alt=&#34;image-20200516233329020&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;到下图界面即表示通过SSH登录路由器后台&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;6&#34;&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geuq3z6medj312g0outam.jpg&#34; alt=&#34;image-20200516234736483&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;输入命令&lt;code&gt;cd /tmp&lt;/code&gt;进入&lt;code&gt;tmp&lt;/code&gt;目录下&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：cd和/tmp中间有一个空格&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geuq4gz3evj30qa0go76d.jpg&#34; alt=&#34;image-20200516234805431&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;p&gt;接下来我们开始刷&lt;code&gt;Breed&lt;/code&gt;了，输入命令：&lt;br&gt;
+&lt;code&gt;mtd -r write breed-mt7620-xiaomi-mini.bin Bootloader&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;命令开始执行后请耐心等待路由器重启，直到可以访问192.168.31.1，提前对路由器断电可能导致路由器损坏。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geupr2t855j311y0omn0u.jpg&#34; alt=&#34;image-20200516233512610&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;h2 id=&#34;15-刷入pandorabox固件&#34;&gt;1.5 刷入Pandorabox固件&lt;/h2&gt;
+&lt;p&gt;接着我们用硬物顶住mini的reset键插上电源开机，等到mini的指示灯狂闪的时候，松开reset键，打开浏览器登录192.168.1.1就可以进入Breed的web界面了，如下图&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;7&#34;&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geups02i0bj31ao0u046t.jpg&#34; alt=&#34;image-20200516233605688&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;点击&lt;code&gt;固件更新&lt;/code&gt;，在固件处选择【PandoraBox-ralink-mt7620-xiaomi-mini-2017-09-27-git-f18401e-squashfs-sysupgrade.bin】然后勾选&lt;code&gt;自动重启&lt;/code&gt;，最后点击&lt;code&gt;上传&lt;/code&gt;。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;8&#34;&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geupsjrvjjj31cr0u0k38.jpg&#34; alt=&#34;image-20200516233637778&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;上传确认，请看图中提示。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;9&#34;&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geupt2naehj31c50u011n.jpg&#34; alt=&#34;image-20200516233705627&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;等待进度条完成，路由器自动重启后，访问192.168.1.1即可进入Pandorabox的管理界面&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;10&#34;&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geuptb1l1vj31ce0u0ais.jpg&#34; alt=&#34;image-20200516233720094&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;16同理可以刷你所需要的任何固件&#34;&gt;1.6同理可以刷你所需要的任何固件&lt;/h2&gt;
+">小米路由器min刷breed+padavan固件</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://tjx158589.github.io/post/dO60L6gOU/"" data-c="
+          &lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlgy1ge9arpd4buj317c0u0kfe.jpg&#34; alt=&#34;gitcheatsheet&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;!-- more --&gt;
+">一张图学会使用git</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://tjx158589.github.io/post/DxtlyjtyA/"" data-c="
+          &lt;h2 id=&#34;1标题&#34;&gt;1.标题&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;#       一级标题    
+##      二级标题    
+###     三级标题    
+####    四级标题    
+#####   五级标题    
+######  六级标题    
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;2引用&#34;&gt;2.引用&lt;/h2&gt;
+&lt;!-- more --&gt;
+&lt;h4 id=&#34;语法&#34;&gt;语法&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; 引用内容1
+&amp;gt; 引用内容2
+&amp;gt;&amp;gt; 引用内容3
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;效果&#34;&gt;效果&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;引用内容1&lt;/p&gt;
+&lt;p&gt;引用内容2&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;引用内容3&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;3代码&#34;&gt;3.代码&lt;/h2&gt;
+&lt;h3 id=&#34;31-单行代码&#34;&gt;3.1 单行代码&lt;/h3&gt;
+&lt;h4 id=&#34;语法-2&#34;&gt;语法&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;`string str1=&amp;quot;hello&amp;quot;;`
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;效果-2&#34;&gt;效果&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;string str1=&amp;quot;hello&amp;quot;;&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;32-多行代码&#34;&gt;3.2 多行代码&lt;/h3&gt;
+&lt;h2 id=&#34;4列表&#34;&gt;4.列表&lt;/h2&gt;
+&lt;h3 id=&#34;41-无序列表&#34;&gt;4.1 无序列表&lt;/h3&gt;
+&lt;h4 id=&#34;语法-3&#34;&gt;语法&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;* 无序列表1
++ 无序列表2
+- 无序列表3
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;42-有序列表&#34;&gt;4.2 有序列表&lt;/h3&gt;
+&lt;h4 id=&#34;语法-4&#34;&gt;语法&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;1. 有序列表1
+2. 有序列表2
+3. 有序列表3
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;5-表格&#34;&gt;5. 表格&lt;/h2&gt;
+&lt;h4 id=&#34;语法-5&#34;&gt;语法&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;|姓名|性别|年龄|手机号|
+|:---|:--:|:--:|---:|
+|张三|男|21|18975346876|
+|李四|女|23|17789548964|
+|王五|男|25|15876513546|
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;效果-3&#34;&gt;效果&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;姓名&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;性别&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;年龄&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;手机号&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;张三&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;男&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;21&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;18975346876&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;李四&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;女&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;23&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;17789548964&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;王五&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;男&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;25&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;15876513546&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;6链接&#34;&gt;6.链接&lt;/h2&gt;
+&lt;h3 id=&#34;61-图片&#34;&gt;6.1 图片&lt;/h3&gt;
+&lt;h4 id=&#34;语法本地图片&#34;&gt;语法（本地图片）&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;[标题(url)]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;语法网络图片&#34;&gt;语法（网络图片）&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;![bilibili](https://www.baidu.com/img/bd_logo1.png?qua=high)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;效果-4&#34;&gt;&lt;em&gt;效果&lt;/em&gt;&lt;/h4&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://www.baidu.com/img/bd_logo1.png?qua=high&#34; alt=&#34;bilibili&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;62-超链接&#34;&gt;6.2 超链接&lt;/h3&gt;
+&lt;h4 id=&#34;语法行内式链接&#34;&gt;语法（行内式链接）&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;[百度][https://www.baidu.com/]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;效果-5&#34;&gt;效果&lt;/h4&gt;
+&lt;p&gt;[百度][https://www,baidu.com/]&lt;/p&gt;
+&lt;h4 id=&#34;语法参考式链接&#34;&gt;语法（参考式链接）&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;[CSDN网址]:https://www.csdn.net/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;效果-6&#34;&gt;效果&lt;/h4&gt;
+&lt;h4 id=&#34;语法自动链接&#34;&gt;语法（自动链接）&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;https://www.baidu.com/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;效果-7&#34;&gt;效果&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.baidu.com/&#34;&gt;https://www.baidu.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;``&lt;/p&gt;
+">typora 使用方法</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://tjx158589.github.io/post/hugogithua-bo-ke-da-jian-md/"" data-c="
+          &lt;h2 id=&#34;准备&#34;&gt;准备&lt;/h2&gt;
+&lt;h3 id=&#34;安装brew&#34;&gt;安装brew&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;打开终端，执行下面的命令。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;$ /usr/bin/ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- more --&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;hugo&#34;&gt;hugo&lt;/h2&gt;
+&lt;h3 id=&#34;步骤1安装hugo&#34;&gt;步骤1:安装hugo&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$ brew install hugo
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;验证安装&#34;&gt;验证安装&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ hugo version
+&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlgy1ge8c5tw9gqj30vo0kajsf.jpg&#34; alt=&#34;image-20200427150228739&#34; style=&#34;zoom: 40%;&#34; /&gt;
+&lt;h3 id=&#34;步骤2建立新网站&#34;&gt;步骤2:建立新网站&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;新建网站文件 blog&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;$ hugo new site blog
+&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlgy1ge8cev22wuj30vo0kaqbf.jpg&#34; alt=&#34;image-20200427151113426&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlgy1ge8cfsraevj30me046aby.jpg&#34; alt=&#34;image-20200427151209200&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;h3 id=&#34;步骤3添加主题&#34;&gt;步骤3：添加主题&lt;a href=&#34;https://gohugo.io/getting-started/quick-start/#step-3-add-a-theme&#34;&gt; &lt;/a&gt;&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;请参阅&lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;themes.gohugo.io&lt;/a&gt;以获取要考虑的主题列表。本快速入门使用了精美的&lt;a href=&#34;https://themes.gohugo.io/gohugo-theme-ananke/&#34;&gt;Ananke主题&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;例如m10c主题&#34;&gt;例如：m10c主题&lt;/h4&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlgy1ge8cinn96bj31gb0u0qh8.jpg&#34; alt=&#34;image-20200427151453707&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;将此存储库克隆到&lt;code&gt;themes/&lt;/code&gt;目录中：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;$ git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c
+&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlgy1ge8cn17ahtj30vo0ka0z2.jpg&#34; alt=&#34;image-20200427151905845&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;h3 id=&#34;步骤4添加一些内容&#34;&gt;步骤4：添加一些内容&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;您可以手动创建内容文件（例如作为&lt;code&gt;content//.&lt;/code&gt;）并在其中提供元数据，但是您可以使用该&lt;code&gt;new&lt;/code&gt;命令为您做一些事情（例如添加一篇 blog1.md文件）：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;hugo new posts/blog1.md
+&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlgy1ge8cqtu3l0j30vo0kawlt.jpg&#34; alt=&#34;image-20200427152245539&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在目录 &lt;code&gt;blog/content/posts&lt;/code&gt;中生成 &lt;code&gt;bolg1.md&lt;/code&gt;文件&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;编辑bolg1md文件添加第一篇博客&#34;&gt;编辑&lt;code&gt;bolg1.md&lt;/code&gt;文件，添加第一篇博客&lt;/h4&gt;
+&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlgy1ge8cw3l7ofj30u00xjgse.jpg&#34; alt=&#34;image-20200427152748227&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;h3 id=&#34;步骤5启动hugo服务器&#34;&gt;步骤5：启动Hugo服务器&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;现在，在本地以m10c主题启动Hugo服务器：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;hugo server -t m10c --buildDrafts
+&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlgy1ge8czgrpoqj30vo0ka7cv.jpg&#34; alt=&#34;image-20200427153103751&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;浏览器输入网址&lt;/p&gt;
+&lt;p&gt;​      显示成功&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlgy1ge8d0l5anaj31gb0u0wn3.jpg&#34; alt=&#34;image-20200427153205341&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;h3 id=&#34;步骤6将网站推上远端githua&#34;&gt;步骤6：将网站推上远端(githua)&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;根据githua库设置地址&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;hugo --theme=&amp;lt;主题》 --baseUrl=&amp;quot;&amp;lt;库地址&amp;gt;&amp;quot; --buildDrafts&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img src=&#34;https://tva1.sinaimg.cn/large/007S8ZIlgy1ge8d7vu6vvj31gb0u07p0.jpg&#34; alt=&#34;image-20200427153908190&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;pre&gt;&lt;code&gt;hugo --theme=m10c --baseUrl=&amp;quot;https://tjx158589.github.io/&amp;quot; --buildDrafts
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;主目录生成需上传远端文件夹&lt;code&gt;public&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;git 上传操作&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;cd public
+
+git init
+
+git add .
+
+git commit -m &amp;quot;我的 hugo 博客第一次提交&amp;quot;
+
+git remote add origin https://github.com/tjx158589/tjx158589.github.io.git
+
+
+git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;步骤7完成打开网站&#34;&gt;步骤7：完成打开网站&lt;/h3&gt;
+">hugo+github博客搭建</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://tjx158589.github.io/post/about/"" data-c="
+          &lt;blockquote&gt;
+&lt;p&gt;欢迎来到我的小站呀，很高兴遇见你！🤝&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;关于本站&#34;&gt;🏠 关于本站&lt;/h2&gt;
+&lt;h2 id=&#34;博主是谁&#34;&gt;👨‍💻 博主是谁&lt;/h2&gt;
+&lt;h2 id=&#34;兴趣爱好&#34;&gt;⛹ 兴趣爱好&lt;/h2&gt;
+&lt;h2 id=&#34;联系我呀&#34;&gt;📬 联系我呀&lt;/h2&gt;
+">关于</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<script>
+  // var escape = "[{&#34;content&#34;:&#34;&lt;p&gt;、### 其实这个也是非常简单，只有三句命令就可以实现。没啥技术难度，不过只能在局域网内实现。&lt;/p&gt;\n&lt;h5 id=\&#34;1-更改转发模式\&#34;&gt;1、更改转发模式&lt;/h5&gt;\n&lt;pre&gt;&lt;code&gt;echo 1 &amp;gt; /proc/sys/net/ipv4/ip_forward\n&lt;/code&gt;&lt;/pre&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1gf2q4h2n18j30vv0u07wh.jpg\&#34; alt=\&#34;image-20200523215235878\&#34; style=\&#34;zoom:67%;\&#34; /&gt;\n&lt;!-- more --&gt;\n&lt;h5 id=\&#34;2-arp攻击\&#34;&gt;2、arp攻击&lt;/h5&gt;\n&lt;pre&gt;&lt;code&gt; arpspoof -i eth0 -t 192.168.1.1  192.168.1.100\n \n#arpspoof -i eth0 -t [路由器ip] [目标主机ip]\n&lt;/code&gt;&lt;/pre&gt;\n&lt;blockquote&gt;\n&lt;p&gt;&lt;code&gt;192.168.123.1&lt;/code&gt;是我路由器地址，&lt;code&gt;192.168.123.116&lt;/code&gt;是我笔记本的地址&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1gf2pnalgspj30vq0u01ky.jpg\&#34; alt=\&#34;image-20200523213603947\&#34; style=\&#34;zoom:50%;\&#34; /&gt;\n&lt;h5 id=\&#34;3-数据还原分析\&#34;&gt;3、数据还原分析&lt;/h5&gt;\n&lt;pre&gt;&lt;code&gt;# driftnet -i eth0\n//eth0是网卡\n&lt;/code&gt;&lt;/pre&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1gf2proex9tj30u00vy7wh.jpg\&#34; alt=\&#34;image-20200523214018000\&#34; style=\&#34;zoom:50%;\&#34; /&gt;\n&lt;h6 id=\&#34;参数命令\&#34;&gt;参数命令&lt;/h6&gt;\n&lt;blockquote&gt;\n&lt;p&gt;&lt;code&gt;-b&lt;/code&gt; ：捕获到新的图片时发出嘟嘟声&lt;/p&gt;\n&lt;p&gt;&lt;code&gt;-i interface&lt;/code&gt; ：选择监听接口&lt;/p&gt;\n&lt;p&gt;&lt;code&gt;-f file&lt;/code&gt;：读取一个指定pcap数据包中的图片&lt;/p&gt;\n&lt;p&gt;&lt;code&gt;-p&lt;/code&gt; ：不让所监听的接口使用混杂模式&lt;/p&gt;\n&lt;p&gt;&lt;code&gt;-a&lt;/code&gt; ：后台模式：将捕获的图片保存到目录中（不会显示在屏幕上）&lt;/p&gt;\n&lt;p&gt;&lt;code&gt;-m number&lt;/code&gt; ：指定保存图片数的数目&lt;/p&gt;\n&lt;p&gt;&lt;code&gt;-d directory&lt;/code&gt; ：指定保存图片的路径&lt;/p&gt;\n&lt;p&gt;&lt;code&gt;-x prefix&lt;/code&gt;：指定保存图片的前缀名&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;h3 id=\&#34;结果\&#34;&gt;结果：&lt;/h3&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1gf2pzieux9j31400u0qv8.jpg\&#34; alt=\&#34;41590241281_.pic_hd\&#34; style=\&#34;zoom:50%;\&#34; /&gt;\n&lt;blockquote&gt;\n&lt;p&gt;左边电脑是被攻击者，右边窗口中的图片就是截取被攻击者网络数据包中抓取的图片&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1gf2q2mw4k2j30u00v5qv5.jpg\&#34; alt=\&#34;image-20200523215050019\&#34; style=\&#34;zoom:67%;\&#34; /&gt;\n&lt;blockquote&gt;\n&lt;p&gt;截取的所有照片都会在文件夹中显示&lt;/p&gt;\n&lt;/blockquote&gt;\n&#34;,&#34;fileName&#34;:&#34;cD7xvp1nC&#34;,&#34;abstract&#34;:&#34;&lt;p&gt;、### 其实这个也是非常简单，只有三句命令就可以实现。没啥技术难度，不过只能在局域网内实现。&lt;/p&gt;\n&lt;h5 id=\&#34;1-更改转发模式\&#34;&gt;1、更改转发模式&lt;/h5&gt;\n&lt;pre&gt;&lt;code&gt;echo 1 &amp;gt; /proc/sys/net/ipv4/ip_forward\n&lt;/code&gt;&lt;/pre&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1gf2q4h2n18j30vv0u07wh.jpg\&#34; alt=\&#34;image-20200523215235878\&#34; style=\&#34;zoom:67%;\&#34; /&gt;&#34;,&#34;title&#34;:&#34;arp欺骗+Driftnet 局域网截取照片&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2020-05-23 22:19:25&#34;,&#34;dateFormat&#34;:&#34;2020-05-23&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://tjx158589.github.io/post/cD7xvp1nC/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;2 min read&#34;,&#34;time&#34;:67000,&#34;words&#34;:290,&#34;minutes&#34;:2},&#34;description&#34;:&#34;、### 其实这个也是非常简单，只有三句命令就可以实现。没啥技术难度，不过只能在局域网内实现。\n1、更改转发模式\necho 1 &amp;gt; /proc/sys/net/ipv4/ip_forward\n\n\n\n2、arp攻击\n arpspoof ...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#1-%E6%9B%B4%E6%94%B9%E8%BD%AC%E5%8F%91%E6%A8%A1%E5%BC%8F\&#34;&gt;1、更改转发模式&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#2-arp%E6%94%BB%E5%87%BB\&#34;&gt;2、arp攻击&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#3-%E6%95%B0%E6%8D%AE%E8%BF%98%E5%8E%9F%E5%88%86%E6%9E%90\&#34;&gt;3、数据还原分析&lt;/a&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%8F%82%E6%95%B0%E5%91%BD%E4%BB%A4\&#34;&gt;参数命令&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E7%BB%93%E6%9E%9C\&#34;&gt;结果：&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;},{&#34;content&#34;:&#34;&lt;h2 id=\&#34;11-下载软件包\&#34;&gt;1.1 下载软件包&lt;/h2&gt;\n&lt;p&gt;&lt;a href=\&#34;https://ww.lanzous.com/icnbsih\&#34;&gt;点我下载  链接：https://ww.lanzous.com/icnbsih&lt;/a&gt;&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;下载后首先进行解压缩，解压缩请使用鼠标右键解压到某路径，别直接双击打开压缩包。&lt;/p&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geuohzxg2bj30lg0o8499.jpg\&#34; alt=\&#34;image-20200516225150019\&#34; style=\&#34;zoom: 50%;\&#34; /&gt;\n&lt;/blockquote&gt;\n&lt;!-- more --&gt;\n&lt;p&gt;解压缩后得到如图所示5个文件&lt;/p&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;1\&#34;&gt;&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geupzmfettj30f207w0t9.jpg\&#34; alt=\&#34;QQ截图20200516234048\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;分别如下：&lt;br&gt;\nbreed底层系统 【breed-mt7620-xiaomi-mini.bin】&lt;br&gt;\n小米mini开发板固件【miwifi_r1cm_firmware_2e9b9_2.21.109】&lt;br&gt;\n小米mini Pandorabox固件【PandoraBox-ralink-mt7620-xiaomi-mini-2017-09-27-git-f18401e-squashfs-sysupgrade.bin】PuTTY虚拟终端【putty.exe】&lt;br&gt;\nSSH客户端【WinSCP-5.13.4-Setup.exe】&lt;/p&gt;\n&lt;p&gt;其中SSH客户端直接进行安装，安装过程配置不更改，默认选项即可。&lt;/p&gt;\n&lt;h2 id=\&#34;12-更新官方开发板系统\&#34;&gt;1.2 更新官方开发板系统&lt;/h2&gt;\n&lt;p&gt;如下图连接路由器后进入管理地址选择系统升级，手动升级，选择压缩包内的小米mini开发板固件【miwifi_r1cm_firmware_2e9b9_2.21.109】进行升级。&lt;/p&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;2\&#34;&gt;&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geuoihsy1nj31dm0me46y.jpg\&#34; alt=\&#34;image-20200516225221699\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;h2 id=\&#34;13-获取ssh权限\&#34;&gt;1.3 获取SSH权限&lt;/h2&gt;\n&lt;p&gt;更新后手机下载小米Wifi APP，将小米mini路由器和手机APP登陆的小米账号绑定，绑定后访问下面地址&lt;br&gt;\nhttps://d.miwifi.com/rom/ssh&lt;/p&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;3\&#34;&gt;&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geuoivwlfej31fa0sqqa9.jpg\&#34; alt=\&#34;image-20200516225243937\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;如图所示，此处即可看到绑定的路由器名字，root密码&lt;/p&gt;\n&lt;p&gt;接下来进行如下操作：&lt;/p&gt;\n&lt;ol&gt;\n&lt;li&gt;请将下载的工具包bin文件复制到U盘（FAT/FAT32格式）的根目录下，保证文件名为miwifi_ssh.bin；&lt;/li&gt;\n&lt;li&gt;断开小米mini路由器的电源，将U盘插入USB接口；&lt;/li&gt;\n&lt;li&gt;按住reset按钮(路由器背后的小孔)之后重新接入电源，指示灯变为黄色闪烁状态即可松开reset键；&lt;/li&gt;\n&lt;li&gt;等待3-5秒后安装完成之后，小米路由器会自动重启，之后您就获得了路由器的SSH权限。&lt;/li&gt;\n&lt;/ol&gt;\n&lt;h2 id=\&#34;14-刷入breed\&#34;&gt;1.4 刷入breed&lt;/h2&gt;\n&lt;p&gt;如下图，打开之前安装的WinScp客户端，按照图中内容填写，其中密码是之前页面的root密码。&lt;/p&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geuoj9abr0j31f20mwnan.jpg\&#34; alt=\&#34;image-20200516225306227\&#34; style=\&#34;zoom:50%;\&#34; /&gt;\n&lt;p&gt;登陆过程中可能会有警告提示，点击更新即可。&lt;/p&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geuojnyowuj30w00og7bo.jpg\&#34; alt=\&#34;image-20200516225329500\&#34; style=\&#34;zoom: 33%;\&#34; /&gt;\n&lt;p&gt;进入后默认是/root/目录，点击下图按钮进入根目录&lt;/p&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geuok71231j31970u0qk5.jpg\&#34; alt=\&#34;image-20200516225400073\&#34; style=\&#34;zoom:50%;\&#34; /&gt;\n&lt;p&gt;双击进入tmp目录，如下图：&lt;/p&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;4\&#34;&gt;&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geuokzfk73j319u0u0e30.jpg\&#34; alt=\&#34;image-20200516225444765\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;将之前解压的文件breed-mt7620-xiaomi-mini.bin拖入tmp文件夹中，如下图，&lt;/p&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geupjemp4zj31eq0lsqmo.jpg\&#34; alt=\&#34;image-20200516232750498\&#34; style=\&#34;zoom:50%;\&#34; /&gt;\n&lt;p&gt;在tmp中可以看到breed文件即可，如下图，&lt;/p&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geupmzhh3yj31a00u0b0d.jpg\&#34; alt=\&#34;image-20200516233116854\&#34; style=\&#34;zoom:50%;\&#34; /&gt;\n&lt;p&gt;此时打开压缩包中的PuTTY，如下图填写，&lt;/p&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geupnt8aq3j30qo0okwgz.jpg\&#34; alt=\&#34;image-20200516233204370\&#34; style=\&#34;zoom: 50%;\&#34; /&gt;\n&lt;p&gt;警告点击“是”&lt;/p&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geupovsd7xj31f20rctk1.jpg\&#34; alt=\&#34;image-20200516233305727\&#34; style=\&#34;zoom:50%;\&#34; /&gt;\n&lt;p&gt;此处用户名是root，密码是小米路由器SSH权限管理界面的root密码&lt;/p&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;5\&#34;&gt;&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geuppa3o0aj31f00cwad4.jpg\&#34; alt=\&#34;image-20200516233329020\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;到下图界面即表示通过SSH登录路由器后台&lt;/p&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;6\&#34;&gt;&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geuq3z6medj312g0outam.jpg\&#34; alt=\&#34;image-20200516234736483\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;输入命令&lt;code&gt;cd /tmp&lt;/code&gt;进入&lt;code&gt;tmp&lt;/code&gt;目录下&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;提示：cd和/tmp中间有一个空格&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geuq4gz3evj30qa0go76d.jpg\&#34; alt=\&#34;image-20200516234805431\&#34; style=\&#34;zoom:50%;\&#34; /&gt;\n&lt;p&gt;接下来我们开始刷&lt;code&gt;Breed&lt;/code&gt;了，输入命令：&lt;br&gt;\n&lt;code&gt;mtd -r write breed-mt7620-xiaomi-mini.bin Bootloader&lt;/code&gt;&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;命令开始执行后请耐心等待路由器重启，直到可以访问192.168.31.1，提前对路由器断电可能导致路由器损坏。&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geupr2t855j311y0omn0u.jpg\&#34; alt=\&#34;image-20200516233512610\&#34; style=\&#34;zoom:50%;\&#34; /&gt;\n&lt;h2 id=\&#34;15-刷入pandorabox固件\&#34;&gt;1.5 刷入Pandorabox固件&lt;/h2&gt;\n&lt;p&gt;接着我们用硬物顶住mini的reset键插上电源开机，等到mini的指示灯狂闪的时候，松开reset键，打开浏览器登录192.168.1.1就可以进入Breed的web界面了，如下图&lt;/p&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;7\&#34;&gt;&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geups02i0bj31ao0u046t.jpg\&#34; alt=\&#34;image-20200516233605688\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;点击&lt;code&gt;固件更新&lt;/code&gt;，在固件处选择【PandoraBox-ralink-mt7620-xiaomi-mini-2017-09-27-git-f18401e-squashfs-sysupgrade.bin】然后勾选&lt;code&gt;自动重启&lt;/code&gt;，最后点击&lt;code&gt;上传&lt;/code&gt;。&lt;/p&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;8\&#34;&gt;&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geupsjrvjjj31cr0u0k38.jpg\&#34; alt=\&#34;image-20200516233637778\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;上传确认，请看图中提示。&lt;/p&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;9\&#34;&gt;&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geupt2naehj31c50u011n.jpg\&#34; alt=\&#34;image-20200516233705627\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;等待进度条完成，路由器自动重启后，访问192.168.1.1即可进入Pandorabox的管理界面&lt;/p&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;10\&#34;&gt;&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geuptb1l1vj31ce0u0ais.jpg\&#34; alt=\&#34;image-20200516233720094\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;h2 id=\&#34;16同理可以刷你所需要的任何固件\&#34;&gt;1.6同理可以刷你所需要的任何固件&lt;/h2&gt;\n&#34;,&#34;fileName&#34;:&#34;ge4jbtkcR&#34;,&#34;abstract&#34;:&#34;&lt;h2 id=\&#34;11-下载软件包\&#34;&gt;1.1 下载软件包&lt;/h2&gt;\n&lt;p&gt;&lt;a href=\&#34;https://ww.lanzous.com/icnbsih\&#34;&gt;点我下载  链接：https://ww.lanzous.com/icnbsih&lt;/a&gt;&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;下载后首先进行解压缩，解压缩请使用鼠标右键解压到某路径，别直接双击打开压缩包。&lt;/p&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlly1geuohzxg2bj30lg0o8499.jpg\&#34; alt=\&#34;image-20200516225150019\&#34; style=\&#34;zoom: 50%;\&#34; /&gt;\n&lt;/blockquote&gt;\n&#34;,&#34;title&#34;:&#34;小米路由器min刷breed+padavan固件&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2020-05-16 22:45:50&#34;,&#34;dateFormat&#34;:&#34;2020-05-16&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://tjx158589.github.io/post/ge4jbtkcR/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;4 min read&#34;,&#34;time&#34;:195000,&#34;words&#34;:857,&#34;minutes&#34;:4},&#34;description&#34;:&#34;1.1 下载软件包\n点我下载  链接：https://ww.lanzous.com/icnbsih\n\n下载后首先进行解压缩，解压缩请使用鼠标右键解压到某路径，别直接双击打开压缩包。\n\n\n\n解压缩后得到如图所示5个文件\n\n分别如下：\nbree...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#11-%E4%B8%8B%E8%BD%BD%E8%BD%AF%E4%BB%B6%E5%8C%85\&#34;&gt;1.1 下载软件包&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#12-%E6%9B%B4%E6%96%B0%E5%AE%98%E6%96%B9%E5%BC%80%E5%8F%91%E6%9D%BF%E7%B3%BB%E7%BB%9F\&#34;&gt;1.2 更新官方开发板系统&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#13-%E8%8E%B7%E5%8F%96ssh%E6%9D%83%E9%99%90\&#34;&gt;1.3 获取SSH权限&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#14-%E5%88%B7%E5%85%A5breed\&#34;&gt;1.4 刷入breed&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#15-%E5%88%B7%E5%85%A5pandorabox%E5%9B%BA%E4%BB%B6\&#34;&gt;1.5 刷入Pandorabox固件&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#16%E5%90%8C%E7%90%86%E5%8F%AF%E4%BB%A5%E5%88%B7%E4%BD%A0%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E4%BB%BB%E4%BD%95%E5%9B%BA%E4%BB%B6\&#34;&gt;1.6同理可以刷你所需要的任何固件&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;},{&#34;content&#34;:&#34;&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlgy1ge9arpd4buj317c0u0kfe.jpg\&#34; alt=\&#34;gitcheatsheet\&#34; style=\&#34;zoom:50%;\&#34; /&gt;\n&lt;!-- more --&gt;\n&#34;,&#34;fileName&#34;:&#34;dO60L6gOU&#34;,&#34;abstract&#34;:&#34;&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlgy1ge9arpd4buj317c0u0kfe.jpg\&#34; alt=\&#34;gitcheatsheet\&#34; style=\&#34;zoom:50%;\&#34; /&gt;&#34;,&#34;title&#34;:&#34;一张图学会使用git&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2020-05-01 14:49:23&#34;,&#34;dateFormat&#34;:&#34;2020-05-01&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://tjx158589.github.io/post/dO60L6gOU/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;0 min read&#34;,&#34;time&#34;:0,&#34;words&#34;:0,&#34;minutes&#34;:0},&#34;description&#34;:&#34;\n\n...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;h2 id=\&#34;1标题\&#34;&gt;1.标题&lt;/h2&gt;\n&lt;pre&gt;&lt;code&gt;#       一级标题    \n##      二级标题    \n###     三级标题    \n####    四级标题    \n#####   五级标题    \n######  六级标题    \n&lt;/code&gt;&lt;/pre&gt;\n&lt;h2 id=\&#34;2引用\&#34;&gt;2.引用&lt;/h2&gt;\n&lt;!-- more --&gt;\n&lt;h4 id=\&#34;语法\&#34;&gt;语法&lt;/h4&gt;\n&lt;pre&gt;&lt;code&gt;&amp;gt; 引用内容1\n&amp;gt; 引用内容2\n&amp;gt;&amp;gt; 引用内容3\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h4 id=\&#34;效果\&#34;&gt;效果&lt;/h4&gt;\n&lt;blockquote&gt;\n&lt;p&gt;引用内容1&lt;/p&gt;\n&lt;p&gt;引用内容2&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;引用内容3&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;/blockquote&gt;\n&lt;h2 id=\&#34;3代码\&#34;&gt;3.代码&lt;/h2&gt;\n&lt;h3 id=\&#34;31-单行代码\&#34;&gt;3.1 单行代码&lt;/h3&gt;\n&lt;h4 id=\&#34;语法-2\&#34;&gt;语法&lt;/h4&gt;\n&lt;pre&gt;&lt;code&gt;`string str1=&amp;quot;hello&amp;quot;;`\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h4 id=\&#34;效果-2\&#34;&gt;效果&lt;/h4&gt;\n&lt;p&gt;&lt;code&gt;string str1=&amp;quot;hello&amp;quot;;&lt;/code&gt;&lt;/p&gt;\n&lt;h3 id=\&#34;32-多行代码\&#34;&gt;3.2 多行代码&lt;/h3&gt;\n&lt;h2 id=\&#34;4列表\&#34;&gt;4.列表&lt;/h2&gt;\n&lt;h3 id=\&#34;41-无序列表\&#34;&gt;4.1 无序列表&lt;/h3&gt;\n&lt;h4 id=\&#34;语法-3\&#34;&gt;语法&lt;/h4&gt;\n&lt;pre&gt;&lt;code&gt;* 无序列表1\n+ 无序列表2\n- 无序列表3\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h3 id=\&#34;42-有序列表\&#34;&gt;4.2 有序列表&lt;/h3&gt;\n&lt;h4 id=\&#34;语法-4\&#34;&gt;语法&lt;/h4&gt;\n&lt;pre&gt;&lt;code&gt;1. 有序列表1\n2. 有序列表2\n3. 有序列表3\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h2 id=\&#34;5-表格\&#34;&gt;5. 表格&lt;/h2&gt;\n&lt;h4 id=\&#34;语法-5\&#34;&gt;语法&lt;/h4&gt;\n&lt;pre&gt;&lt;code&gt;|姓名|性别|年龄|手机号|\n|:---|:--:|:--:|---:|\n|张三|男|21|18975346876|\n|李四|女|23|17789548964|\n|王五|男|25|15876513546|\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h4 id=\&#34;效果-3\&#34;&gt;效果&lt;/h4&gt;\n&lt;table&gt;\n&lt;thead&gt;\n&lt;tr&gt;\n&lt;th style=\&#34;text-align:left\&#34;&gt;姓名&lt;/th&gt;\n&lt;th style=\&#34;text-align:center\&#34;&gt;性别&lt;/th&gt;\n&lt;th style=\&#34;text-align:center\&#34;&gt;年龄&lt;/th&gt;\n&lt;th style=\&#34;text-align:right\&#34;&gt;手机号&lt;/th&gt;\n&lt;/tr&gt;\n&lt;/thead&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:left\&#34;&gt;张三&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;男&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;21&lt;/td&gt;\n&lt;td style=\&#34;text-align:right\&#34;&gt;18975346876&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:left\&#34;&gt;李四&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;女&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;23&lt;/td&gt;\n&lt;td style=\&#34;text-align:right\&#34;&gt;17789548964&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:left\&#34;&gt;王五&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;男&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;25&lt;/td&gt;\n&lt;td style=\&#34;text-align:right\&#34;&gt;15876513546&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;h2 id=\&#34;6链接\&#34;&gt;6.链接&lt;/h2&gt;\n&lt;h3 id=\&#34;61-图片\&#34;&gt;6.1 图片&lt;/h3&gt;\n&lt;h4 id=\&#34;语法本地图片\&#34;&gt;语法（本地图片）&lt;/h4&gt;\n&lt;pre&gt;&lt;code&gt;[标题(url)]\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h4 id=\&#34;语法网络图片\&#34;&gt;语法（网络图片）&lt;/h4&gt;\n&lt;pre&gt;&lt;code&gt;![bilibili](https://www.baidu.com/img/bd_logo1.png?qua=high)\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h4 id=\&#34;效果-4\&#34;&gt;&lt;em&gt;效果&lt;/em&gt;&lt;/h4&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;1\&#34;&gt;&lt;img src=\&#34;https://www.baidu.com/img/bd_logo1.png?qua=high\&#34; alt=\&#34;bilibili\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;h3 id=\&#34;62-超链接\&#34;&gt;6.2 超链接&lt;/h3&gt;\n&lt;h4 id=\&#34;语法行内式链接\&#34;&gt;语法（行内式链接）&lt;/h4&gt;\n&lt;pre&gt;&lt;code&gt;[百度][https://www.baidu.com/]\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h4 id=\&#34;效果-5\&#34;&gt;效果&lt;/h4&gt;\n&lt;p&gt;[百度][https://www,baidu.com/]&lt;/p&gt;\n&lt;h4 id=\&#34;语法参考式链接\&#34;&gt;语法（参考式链接）&lt;/h4&gt;\n&lt;pre&gt;&lt;code&gt;[CSDN网址]:https://www.csdn.net/\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h4 id=\&#34;效果-6\&#34;&gt;效果&lt;/h4&gt;\n&lt;h4 id=\&#34;语法自动链接\&#34;&gt;语法（自动链接）&lt;/h4&gt;\n&lt;pre&gt;&lt;code&gt;&amp;lt;https://www.baidu.com/&amp;gt;\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h4 id=\&#34;效果-7\&#34;&gt;效果&lt;/h4&gt;\n&lt;p&gt;&lt;a href=\&#34;https://www.baidu.com/\&#34;&gt;https://www.baidu.com/&lt;/a&gt;&lt;/p&gt;\n&lt;p&gt;``&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;DxtlyjtyA&#34;,&#34;abstract&#34;:&#34;&lt;h2 id=\&#34;1标题\&#34;&gt;1.标题&lt;/h2&gt;\n&lt;pre&gt;&lt;code&gt;#       一级标题    \n##      二级标题    \n###     三级标题    \n####    四级标题    \n#####   五级标题    \n######  六级标题    \n&lt;/code&gt;&lt;/pre&gt;\n&lt;h2 id=\&#34;2引用\&#34;&gt;2.引用&lt;/h2&gt;\n&#34;,&#34;title&#34;:&#34;typora 使用方法&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2020-04-28 00:21:07&#34;,&#34;dateFormat&#34;:&#34;2020-04-28&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://tjx158589.github.io/post/DxtlyjtyA/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;2 min read&#34;,&#34;time&#34;:75000,&#34;words&#34;:298,&#34;minutes&#34;:2},&#34;description&#34;:&#34;1.标题\n#       一级标题    \n##      二级标题    \n###     三级标题    \n####    四级标题    \n#####   五级标题    \n######  六级标题    \n\n2.引用\n\n语法\n&amp;gt...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#1%E6%A0%87%E9%A2%98\&#34;&gt;1.标题&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#2%E5%BC%95%E7%94%A8\&#34;&gt;2.引用&lt;/a&gt;&lt;br&gt;\n*\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E8%AF%AD%E6%B3%95\&#34;&gt;语法&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%95%88%E6%9E%9C\&#34;&gt;效果&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#3%E4%BB%A3%E7%A0%81\&#34;&gt;3.代码&lt;/a&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#31-%E5%8D%95%E8%A1%8C%E4%BB%A3%E7%A0%81\&#34;&gt;3.1 单行代码&lt;/a&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E8%AF%AD%E6%B3%95-2\&#34;&gt;语法&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%95%88%E6%9E%9C-2\&#34;&gt;效果&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#32-%E5%A4%9A%E8%A1%8C%E4%BB%A3%E7%A0%81\&#34;&gt;3.2 多行代码&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#4%E5%88%97%E8%A1%A8\&#34;&gt;4.列表&lt;/a&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#41-%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8\&#34;&gt;4.1 无序列表&lt;/a&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E8%AF%AD%E6%B3%95-3\&#34;&gt;语法&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#42-%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8\&#34;&gt;4.2 有序列表&lt;/a&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E8%AF%AD%E6%B3%95-4\&#34;&gt;语法&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#5-%E8%A1%A8%E6%A0%BC\&#34;&gt;5. 表格&lt;/a&gt;&lt;br&gt;\n*\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E8%AF%AD%E6%B3%95-5\&#34;&gt;语法&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%95%88%E6%9E%9C-3\&#34;&gt;效果&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#6%E9%93%BE%E6%8E%A5\&#34;&gt;6.链接&lt;/a&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#61-%E5%9B%BE%E7%89%87\&#34;&gt;6.1 图片&lt;/a&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E8%AF%AD%E6%B3%95%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87\&#34;&gt;语法（本地图片）&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E8%AF%AD%E6%B3%95%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87\&#34;&gt;语法（网络图片）&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%95%88%E6%9E%9C-4\&#34;&gt;&lt;em&gt;效果&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#62-%E8%B6%85%E9%93%BE%E6%8E%A5\&#34;&gt;6.2 超链接&lt;/a&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E8%AF%AD%E6%B3%95%E8%A1%8C%E5%86%85%E5%BC%8F%E9%93%BE%E6%8E%A5\&#34;&gt;语法（行内式链接）&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%95%88%E6%9E%9C-5\&#34;&gt;效果&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E8%AF%AD%E6%B3%95%E5%8F%82%E8%80%83%E5%BC%8F%E9%93%BE%E6%8E%A5\&#34;&gt;语法（参考式链接）&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%95%88%E6%9E%9C-6\&#34;&gt;效果&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E8%AF%AD%E6%B3%95%E8%87%AA%E5%8A%A8%E9%93%BE%E6%8E%A5\&#34;&gt;语法（自动链接）&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%95%88%E6%9E%9C-7\&#34;&gt;效果&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;},{&#34;content&#34;:&#34;&lt;h2 id=\&#34;准备\&#34;&gt;准备&lt;/h2&gt;\n&lt;h3 id=\&#34;安装brew\&#34;&gt;安装brew&lt;/h3&gt;\n&lt;blockquote&gt;\n&lt;p&gt;打开终端，执行下面的命令。&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;pre&gt;&lt;code&gt;$ /usr/bin/ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;\n&lt;/code&gt;&lt;/pre&gt;\n&lt;!-- more --&gt;\n&lt;hr&gt;\n&lt;h2 id=\&#34;hugo\&#34;&gt;hugo&lt;/h2&gt;\n&lt;h3 id=\&#34;步骤1安装hugo\&#34;&gt;步骤1:安装hugo&lt;/h3&gt;\n&lt;pre&gt;&lt;code&gt;$ brew install hugo\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h4 id=\&#34;验证安装\&#34;&gt;验证安装&lt;/h4&gt;\n&lt;pre&gt;&lt;code&gt;$ hugo version\n&lt;/code&gt;&lt;/pre&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlgy1ge8c5tw9gqj30vo0kajsf.jpg\&#34; alt=\&#34;image-20200427150228739\&#34; style=\&#34;zoom: 40%;\&#34; /&gt;\n&lt;h3 id=\&#34;步骤2建立新网站\&#34;&gt;步骤2:建立新网站&lt;/h3&gt;\n&lt;blockquote&gt;\n&lt;p&gt;新建网站文件 blog&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;pre&gt;&lt;code&gt;$ hugo new site blog\n&lt;/code&gt;&lt;/pre&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlgy1ge8cev22wuj30vo0kaqbf.jpg\&#34; alt=\&#34;image-20200427151113426\&#34; style=\&#34;zoom:50%;\&#34; /&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlgy1ge8cfsraevj30me046aby.jpg\&#34; alt=\&#34;image-20200427151209200\&#34; style=\&#34;zoom:50%;\&#34; /&gt;\n&lt;h3 id=\&#34;步骤3添加主题\&#34;&gt;步骤3：添加主题&lt;a href=\&#34;https://gohugo.io/getting-started/quick-start/#step-3-add-a-theme\&#34;&gt; &lt;/a&gt;&lt;/h3&gt;\n&lt;blockquote&gt;\n&lt;p&gt;请参阅&lt;a href=\&#34;https://themes.gohugo.io/\&#34;&gt;themes.gohugo.io&lt;/a&gt;以获取要考虑的主题列表。本快速入门使用了精美的&lt;a href=\&#34;https://themes.gohugo.io/gohugo-theme-ananke/\&#34;&gt;Ananke主题&lt;/a&gt;。&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;h4 id=\&#34;例如m10c主题\&#34;&gt;例如：m10c主题&lt;/h4&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;1\&#34;&gt;&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlgy1ge8cinn96bj31gb0u0qh8.jpg\&#34; alt=\&#34;image-20200427151453707\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;blockquote&gt;\n&lt;p&gt;将此存储库克隆到&lt;code&gt;themes/&lt;/code&gt;目录中：&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;pre&gt;&lt;code&gt;$ git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c\n&lt;/code&gt;&lt;/pre&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlgy1ge8cn17ahtj30vo0ka0z2.jpg\&#34; alt=\&#34;image-20200427151905845\&#34; style=\&#34;zoom:50%;\&#34; /&gt;\n&lt;h3 id=\&#34;步骤4添加一些内容\&#34;&gt;步骤4：添加一些内容&lt;/h3&gt;\n&lt;blockquote&gt;\n&lt;p&gt;您可以手动创建内容文件（例如作为&lt;code&gt;content//.&lt;/code&gt;）并在其中提供元数据，但是您可以使用该&lt;code&gt;new&lt;/code&gt;命令为您做一些事情（例如添加一篇 blog1.md文件）：&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;pre&gt;&lt;code&gt;hugo new posts/blog1.md\n&lt;/code&gt;&lt;/pre&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlgy1ge8cqtu3l0j30vo0kawlt.jpg\&#34; alt=\&#34;image-20200427152245539\&#34; style=\&#34;zoom:50%;\&#34; /&gt;\n&lt;blockquote&gt;\n&lt;p&gt;在目录 &lt;code&gt;blog/content/posts&lt;/code&gt;中生成 &lt;code&gt;bolg1.md&lt;/code&gt;文件&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;h4 id=\&#34;编辑bolg1md文件添加第一篇博客\&#34;&gt;编辑&lt;code&gt;bolg1.md&lt;/code&gt;文件，添加第一篇博客&lt;/h4&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlgy1ge8cw3l7ofj30u00xjgse.jpg\&#34; alt=\&#34;image-20200427152748227\&#34; style=\&#34;zoom:50%;\&#34; /&gt;\n&lt;h3 id=\&#34;步骤5启动hugo服务器\&#34;&gt;步骤5：启动Hugo服务器&lt;/h3&gt;\n&lt;blockquote&gt;\n&lt;p&gt;现在，在本地以m10c主题启动Hugo服务器：&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;pre&gt;&lt;code&gt;hugo server -t m10c --buildDrafts\n&lt;/code&gt;&lt;/pre&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlgy1ge8czgrpoqj30vo0ka7cv.jpg\&#34; alt=\&#34;image-20200427153103751\&#34; style=\&#34;zoom:50%;\&#34; /&gt;\n&lt;blockquote&gt;\n&lt;p&gt;浏览器输入网址&lt;/p&gt;\n&lt;p&gt;​      显示成功&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlgy1ge8d0l5anaj31gb0u0wn3.jpg\&#34; alt=\&#34;image-20200427153205341\&#34; style=\&#34;zoom:50%;\&#34; /&gt;\n&lt;h3 id=\&#34;步骤6将网站推上远端githua\&#34;&gt;步骤6：将网站推上远端(githua)&lt;/h3&gt;\n&lt;blockquote&gt;\n&lt;p&gt;根据githua库设置地址&lt;/p&gt;\n&lt;p&gt;&lt;code&gt;hugo --theme=&amp;lt;主题》 --baseUrl=&amp;quot;&amp;lt;库地址&amp;gt;&amp;quot; --buildDrafts&lt;/code&gt;&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;img src=\&#34;https://tva1.sinaimg.cn/large/007S8ZIlgy1ge8d7vu6vvj31gb0u07p0.jpg\&#34; alt=\&#34;image-20200427153908190\&#34; style=\&#34;zoom:50%;\&#34; /&gt;\n&lt;pre&gt;&lt;code&gt;hugo --theme=m10c --baseUrl=&amp;quot;https://tjx158589.github.io/&amp;quot; --buildDrafts\n&lt;/code&gt;&lt;/pre&gt;\n&lt;blockquote&gt;\n&lt;p&gt;主目录生成需上传远端文件夹&lt;code&gt;public&lt;/code&gt;&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;blockquote&gt;\n&lt;p&gt;git 上传操作&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;pre&gt;&lt;code&gt;cd public\n\ngit init\n\ngit add .\n\ngit commit -m &amp;quot;我的 hugo 博客第一次提交&amp;quot;\n\ngit remote add origin https://github.com/tjx158589/tjx158589.github.io.git\n\n\ngit push -u origin master\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h3 id=\&#34;步骤7完成打开网站\&#34;&gt;步骤7：完成打开网站&lt;/h3&gt;\n&#34;,&#34;fileName&#34;:&#34;hugogithua-bo-ke-da-jian-md&#34;,&#34;abstract&#34;:&#34;&lt;h2 id=\&#34;准备\&#34;&gt;准备&lt;/h2&gt;\n&lt;h3 id=\&#34;安装brew\&#34;&gt;安装brew&lt;/h3&gt;\n&lt;blockquote&gt;\n&lt;p&gt;打开终端，执行下面的命令。&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;pre&gt;&lt;code&gt;$ /usr/bin/ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;\n&lt;/code&gt;&lt;/pre&gt;\n&#34;,&#34;title&#34;:&#34;hugo+github博客搭建&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2020-04-27 23:41:19&#34;,&#34;dateFormat&#34;:&#34;2020-04-27&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://tjx158589.github.io/post/hugogithua-bo-ke-da-jian-md/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;2 min read&#34;,&#34;time&#34;:97000,&#34;words&#34;:376,&#34;minutes&#34;:2},&#34;description&#34;:&#34;准备\n安装brew\n\n打开终端，执行下面的命令。\n\n$ /usr/bin/ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/maste...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%87%86%E5%A4%87\&#34;&gt;准备&lt;/a&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%AE%89%E8%A3%85brew\&#34;&gt;安装brew&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#hugo\&#34;&gt;hugo&lt;/a&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%AD%A5%E9%AA%A41%E5%AE%89%E8%A3%85hugo\&#34;&gt;步骤1:安装hugo&lt;/a&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E9%AA%8C%E8%AF%81%E5%AE%89%E8%A3%85\&#34;&gt;验证安装&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%AD%A5%E9%AA%A42%E5%BB%BA%E7%AB%8B%E6%96%B0%E7%BD%91%E7%AB%99\&#34;&gt;步骤2:建立新网站&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%AD%A5%E9%AA%A43%E6%B7%BB%E5%8A%A0%E4%B8%BB%E9%A2%98\&#34;&gt;步骤3：添加主题 &lt;/a&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E4%BE%8B%E5%A6%82m10c%E4%B8%BB%E9%A2%98\&#34;&gt;例如：m10c主题&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%AD%A5%E9%AA%A44%E6%B7%BB%E5%8A%A0%E4%B8%80%E4%BA%9B%E5%86%85%E5%AE%B9\&#34;&gt;步骤4：添加一些内容&lt;/a&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E7%BC%96%E8%BE%91bolg1md%E6%96%87%E4%BB%B6%E6%B7%BB%E5%8A%A0%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2\&#34;&gt;编辑&lt;code&gt;bolg1.md&lt;/code&gt;文件，添加第一篇博客&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%AD%A5%E9%AA%A45%E5%90%AF%E5%8A%A8hugo%E6%9C%8D%E5%8A%A1%E5%99%A8\&#34;&gt;步骤5：启动Hugo服务器&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%AD%A5%E9%AA%A46%E5%B0%86%E7%BD%91%E7%AB%99%E6%8E%A8%E4%B8%8A%E8%BF%9C%E7%AB%AFgithua\&#34;&gt;步骤6：将网站推上远端(githua)&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%AD%A5%E9%AA%A47%E5%AE%8C%E6%88%90%E6%89%93%E5%BC%80%E7%BD%91%E7%AB%99\&#34;&gt;步骤7：完成打开网站&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;},{&#34;content&#34;:&#34;&lt;blockquote&gt;\n&lt;p&gt;欢迎来到我的小站呀，很高兴遇见你！🤝&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;h2 id=\&#34;关于本站\&#34;&gt;🏠 关于本站&lt;/h2&gt;\n&lt;h2 id=\&#34;博主是谁\&#34;&gt;👨‍💻 博主是谁&lt;/h2&gt;\n&lt;h2 id=\&#34;兴趣爱好\&#34;&gt;⛹ 兴趣爱好&lt;/h2&gt;\n&lt;h2 id=\&#34;联系我呀\&#34;&gt;📬 联系我呀&lt;/h2&gt;\n&#34;,&#34;fileName&#34;:&#34;about&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;关于&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2019-01-25 19:09:48&#34;,&#34;dateFormat&#34;:&#34;2019-01-25&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://tjx158589.github.io/post/about/&#34;,&#34;hideInList&#34;:true,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:6000,&#34;words&#34;:31,&#34;minutes&#34;:1},&#34;description&#34;:&#34;\n欢迎来到我的小站呀，很高兴遇见你！🤝\n\n🏠 关于本站\n👨‍💻 博主是谁\n⛹ 兴趣爱好\n📬 联系我呀\n...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99\&#34;&gt;🏠 关于本站&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81\&#34;&gt;👨‍💻 博主是谁&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD\&#34;&gt;⛹ 兴趣爱好&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80\&#34;&gt;📬 联系我呀&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;}]";
+  // var json = escape.substr(1, escape.length - 2);
+  // var datas = json.split(',');
+  // for (let i=0; i < datas.length; i++) {
+  //   let item = datas[i];
+  //   let attrs = item.split('34;:&#34')
+  //   debugger
+  //   console.log(datas[i])
+  // }
+  let escapeMap = new Map();
+  escapeMap.set('&#34;', '"');
+  escapeMap.set('&gt;', '>');
+  escapeMap.set('&#39;', "'");
+  escapeMap.set('&lt;', '<');
+  escapeMap.set('&quot;', '"');
+  escapeMap.set('&amp;', '&');
+</script> -->
+
+<script src="/media/js/mouse/love.js"></script>
+
+
+<script src=" /media/js/cool.js"></script>
+
+
+</html>

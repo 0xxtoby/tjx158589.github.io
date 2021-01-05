@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://tjx158589.github.io</id>
+    <title>toby的博客</title>
+    <updated>2021-01-05T02:00:12.403Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://tjx158589.github.io"/>
+    <link rel="self" href="https://tjx158589.github.io/atom.xml"/>
+    <subtitle>大一学生自己的博客</subtitle>
+    <logo>https://tjx158589.github.io/images/avatar.png</logo>
+    <icon>https://tjx158589.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2021, toby的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[arp欺骗+Driftnet 局域网截取照片]]></title>
+        <id>https://tjx158589.github.io/post/cD7xvp1nC/</id>
+        <link href="https://tjx158589.github.io/post/cD7xvp1nC/">
+        </link>
+        <updated>2020-05-23T14:19:25.000Z</updated>
+        <summary type="html"><![CDATA[<p>、### 其实这个也是非常简单，只有三句命令就可以实现。没啥技术难度，不过只能在局域网内实现。</p>
+<h5 id="1-更改转发模式">1、更改转发模式</h5>
+<pre><code>echo 1 &gt; /proc/sys/net/ipv4/ip_forward
+</code></pre>
+<img src="https://tva1.sinaimg.cn/large/007S8ZIlly1gf2q4h2n18j30vv0u07wh.jpg" alt="image-20200523215235878" style="zoom:67%;" />]]></summary>
+        <content type="html"><![CDATA[<p>、### 其实这个也是非常简单，只有三句命令就可以实现。没啥技术难度，不过只能在局域网内实现。</p>
+<h5 id="1-更改转发模式">1、更改转发模式</h5>
+<pre><code>echo 1 &gt; /proc/sys/net/ipv4/ip_forward
+</code></pre>
+<img src="https://tva1.sinaimg.cn/large/007S8ZIlly1gf2q4h2n18j30vv0u07wh.jpg" alt="image-20200523215235878" style="zoom:67%;" />]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[小米路由器min刷breed+padavan固件]]></title>
+        <id>https://tjx158589.github.io/post/ge4jbtkcR/</id>
+        <link href="https://tjx158589.github.io/post/ge4jbtkcR/">
+        </link>
+        <updated>2020-05-16T14:45:50.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="11-下载软件包">1.1 下载软件包</h2>
+<p><a href="https://ww.lanzous.com/icnbsih">点我下载  链接：https://ww.lanzous.com/icnbsih</a></p>
+<blockquote>
+<p>下载后首先进行解压缩，解压缩请使用鼠标右键解压到某路径，别直接双击打开压缩包。</p>
+<img src="https://tva1.sinaimg.cn/large/007S8ZIlly1geuohzxg2bj30lg0o8499.jpg" alt="image-20200516225150019" style="zoom: 50%;" />
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="11-下载软件包">1.1 下载软件包</h2>
+<p><a href="https://ww.lanzous.com/icnbsih">点我下载  链接：https://ww.lanzous.com/icnbsih</a></p>
+<blockquote>
+<p>下载后首先进行解压缩，解压缩请使用鼠标右键解压到某路径，别直接双击打开压缩包。</p>
+<img src="https://tva1.sinaimg.cn/large/007S8ZIlly1geuohzxg2bj30lg0o8499.jpg" alt="image-20200516225150019" style="zoom: 50%;" />
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[一张图学会使用git]]></title>
+        <id>https://tjx158589.github.io/post/dO60L6gOU/</id>
+        <link href="https://tjx158589.github.io/post/dO60L6gOU/">
+        </link>
+        <updated>2020-05-01T06:49:23.000Z</updated>
+        <summary type="html"><![CDATA[<img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1ge9arpd4buj317c0u0kfe.jpg" alt="gitcheatsheet" style="zoom:50%;" />]]></summary>
+        <content type="html"><![CDATA[<img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1ge9arpd4buj317c0u0kfe.jpg" alt="gitcheatsheet" style="zoom:50%;" />]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[typora 使用方法]]></title>
+        <id>https://tjx158589.github.io/post/DxtlyjtyA/</id>
+        <link href="https://tjx158589.github.io/post/DxtlyjtyA/">
+        </link>
+        <updated>2020-04-27T16:21:07.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="1标题">1.标题</h2>
+<pre><code>#       一级标题    
+##      二级标题    
+###     三级标题    
+####    四级标题    
+#####   五级标题    
+######  六级标题    
+</code></pre>
+<h2 id="2引用">2.引用</h2>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="1标题">1.标题</h2>
+<pre><code>#       一级标题    
+##      二级标题    
+###     三级标题    
+####    四级标题    
+#####   五级标题    
+######  六级标题    
+</code></pre>
+<h2 id="2引用">2.引用</h2>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[hugo+github博客搭建]]></title>
+        <id>https://tjx158589.github.io/post/hugogithua-bo-ke-da-jian-md/</id>
+        <link href="https://tjx158589.github.io/post/hugogithua-bo-ke-da-jian-md/">
+        </link>
+        <updated>2020-04-27T15:41:19.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="准备">准备</h2>
+<h3 id="安装brew">安装brew</h3>
+<blockquote>
+<p>打开终端，执行下面的命令。</p>
+</blockquote>
+<pre><code>$ /usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+</code></pre>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="准备">准备</h2>
+<h3 id="安装brew">安装brew</h3>
+<blockquote>
+<p>打开终端，执行下面的命令。</p>
+</blockquote>
+<pre><code>$ /usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+</code></pre>
+]]></content>
+    </entry>
+</feed>
