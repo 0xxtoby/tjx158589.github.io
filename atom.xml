@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tjx158589.github.io</id>
     <title>toby的博客</title>
-    <updated>2021-01-05T02:00:12.403Z</updated>
+    <updated>2021-01-26T03:45:28.239Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tjx158589.github.io"/>
     <link rel="self" href="https://tjx158589.github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://tjx158589.github.io/images/avatar.png</logo>
     <icon>https://tjx158589.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, toby的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[计算机导论期末复习资料]]></title>
+        <id>https://tjx158589.github.io/post/elbtsnl8g/</id>
+        <link href="https://tjx158589.github.io/post/elbtsnl8g/">
+        </link>
+        <updated>2021-01-26T03:43:42.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[arp欺骗+Driftnet 局域网截取照片]]></title>
         <id>https://tjx158589.github.io/post/cD7xvp1nC/</id>

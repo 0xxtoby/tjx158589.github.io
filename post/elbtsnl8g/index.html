@@ -8,7 +8,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="大一学生自己的博客">
 <meta name="theme-color" content="#222">
-<title>toby的博客</title>
+<title>计算机导论期末复习资料 | toby的博客</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1611632662968">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/pisces.css">
@@ -44,6 +44,8 @@
   })();
 </script>
 
+  <meta name="description" content="计算机导论期末复习资料" />
+  <meta name="keywords" content="" />
 </head>
 
 <body>
@@ -105,7 +107,7 @@
             
               
             
-            <li class="nav-item nav-item-active">
+            <li class="nav-item ">
               
               
                 <a href="/tags/" target="_self">
@@ -195,10 +197,26 @@
   <div class="main-continer">
     
     <div
-      class="section-layout  pisces">
+      class="section-layout pisces ">
       <div class="section-layout-wrapper">
-        <div id="sidebarMeta" class="sidebar">
-    
+        
+
+<div class="sidebar">
+  
+    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body pisces" id="sidebar_body">
+        
+          
+            <div class="post-side-meta" id="post_side_meta">
+              
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
@@ -264,84 +282,644 @@
 
 
 </div>
+            </div>
+            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+              <div class="toc-box right-motion">
+  <div class="toc-wrapper auto-number auto"
+    id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E7%AC%AC%E4%B8%80%E7%AB%A0">第一章</a><br>
+*
+<ul>
+<li><a href="#%E8%AE%B2%E8%BF%B0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B">讲述计算机的发展历程</a></li>
+<li><a href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%9C%89%E5%93%AA%E4%BA%9B%E7%89%B9%E7%82%B9">计算机有哪些特点</a></li>
+<li><a href="#%E7%AE%80%E8%BF%B0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E5%AE%9A%E4%B9%89%E5%8F%8A%E5%85%B6%E6%A0%B9%E6%9C%AC%E9%97%AE%E9%A2%98">简述计算机科学的定义及其根本问题</a></li>
+<li><a href="#%E7%AE%80%E8%BF%B0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E4%B8%8E%E6%8A%80%E6%9C%AF%E4%B8%93%E4%B8%9A%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB">简述计算机科学与技术专业知识体系</a></li>
+<li><a href="#%E7%AE%80%E8%BF%B0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E4%B8%8E%E6%8A%80%E6%9C%AF%E5%AD%A6%E7%A7%91%E7%9A%84%E4%B8%89%E4%B8%AA%E5%AD%A6%E7%A7%91%E5%BD%A2%E6%80%81">简述计算机科学与技术学科的三个学科形态</a></li>
+</ul>
+</li>
+<li><a href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0">第二章</a><br>
+*
+<ul>
+<li><a href="#%E7%AE%80%E8%BF%B0%E5%9B%BE%E7%81%B5%E6%9C%BA%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3">简述图灵机模型的基本思想</a></li>
+<li><a href="#%E7%AE%80%E8%BF%B0%E5%86%AF%E8%AF%BA%E4%BE%9D%E6%9B%BC%E5%9E%8B%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3">简述冯诺依曼型计算机的基本思想</a></li>
+<li><a href="#%E6%B1%89%E5%AD%97%E7%BC%96%E7%A0%81%E6%9C%89%E5%93%AA%E5%87%A0%E7%B1%BB%E5%88%97%E5%87%BA%E5%87%A0%E7%A7%8D%E5%B8%B8%E8%A7%81%E7%9A%84%E8%BE%93%E5%85%A5%E7%A0%81">汉字编码有哪几类？列出几种常见的输入码</a></li>
+<li><a href="#%E5%AE%9A%E7%82%B9%E8%A1%A8%E7%A4%BA%E6%B3%95%E5%92%8C%E6%B5%AE%E7%82%B9%E8%A1%A8%E7%A4%BA%E6%B3%95%E5%90%84%E6%9C%89%E4%BB%80%E4%B9%88%E7%89%B9%E7%82%B9">定点表示法和浮点表示法各有什么特点</a></li>
+<li><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%B4%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%AD%E7%94%A8%E8%A1%A5%E7%A0%81%E5%81%9A%E5%8A%A0%E5%87%8F%E8%BF%90%E7%AE%97%E6%9C%80%E7%AE%80%E5%8D%95">为什么说计算机中用补码做加减运算最简单</a></li>
+<li><a href="#%E6%94%B6%E9%9B%86%E8%B5%84%E6%96%99%E4%BA%86%E8%A7%A3%E5%9B%BE%E7%81%B5%E6%9C%BA%E6%A8%A1%E5%9E%8B%E7%9A%84%E4%B8%BB%E8%A6%81%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F%E6%9C%89%E5%93%AA%E4%BA%9B">收集资料，了解图灵机模型的主要应用领域有哪些</a></li>
+</ul>
+</li>
+<li><a href="#%E7%AC%AC%E4%B8%89%E7%AB%A0">第三章</a><br>
+*
+<ul>
+<li><a href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%94%B1%E5%93%AA%E5%87%A0%E5%A4%A7%E9%83%A8%E5%88%86%E7%BB%84%E6%88%90%E5%90%84%E9%83%A8%E5%88%86%E6%9C%89%E4%BB%80%E4%B9%88%E5%8A%9F%E8%83%BD">计算机系统由哪几大部分组成？各部分有什么功能？</a></li>
+<li><a href="#%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8%E5%9C%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%B7%A5%E4%BD%9C%E8%BF%87%E7%A8%8B%E4%B8%AD%E8%B5%B7%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8">中央处理器在计算机工作过程中起什么作用？</a></li>
+<li><a href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E8%AE%BE%E5%A4%87%E4%B8%BE%E4%BE%8B%E5%B8%B8%E8%A7%81%E7%9A%84%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E8%AE%BE%E5%A4%87">什么是输入输出设备？举例常见的输入输出设备。</a></li>
+<li><a href="#%E5%86%AF%E8%AF%BA%E4%BE%9D%E6%9B%BC%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%94%B1%E5%93%AA%E5%87%A0%E5%A4%A7%E9%83%A8%E5%88%86%E7%BB%84%E6%88%90%E5%AE%83%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88">冯诺依曼体系结构的计算机由哪几大部分组成？它的工作原理是什么？</a></li>
+<li><a href="#%E7%8E%B0%E4%BB%A3%E6%8F%90%E5%87%BA%E7%9A%84%E9%9D%9E%E5%86%AF%E8%AF%BA%E4%BE%9D%E6%9B%BC%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E6%9C%89%E5%93%AA%E4%BA%9B">现代提出的非冯诺依曼计算机体系结构有哪些？</a></li>
+<li><a href="#%E7%B3%BB%E7%BB%9F%E6%80%BB%E7%BA%BF%E6%8C%89%E5%8A%9F%E8%83%BD%E5%88%86%E5%8F%AF%E4%BB%A5%E5%88%86%E4%B8%BA%E5%93%AA%E5%87%A0%E7%B1%BB%E5%90%84%E6%9C%89%E4%BB%80%E4%B9%88%E5%8A%9F%E8%83%BD">系统总线按功能分可以分为哪几类？各有什么功能？</a></li>
+<li><a href="#%E7%AE%80%E8%BF%B0%E4%BB%80%E4%B9%88%E6%98%AF%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%AE%83%E7%9A%84%E5%8A%9F%E8%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B">简述什么是操作系统。它的功能有哪些？</a></li>
+<li><a href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%BD%AF%E4%BB%B6%E5%8D%B1%E6%9C%BA%E4%BB%80%E4%B9%88%E6%98%AF%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E8%BF%87%E7%A8%8B%E6%98%AF%E4%BB%80%E4%B9%88">什么是软件危机？什么是软件工程？软件工程过程是什么？</a></li>
+<li><a href="#%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E9%81%B5%E5%BE%AA%E5%93%AA%E4%BA%9B%E5%8E%9F%E5%88%99">软件工程遵循哪些原则</a></li>
+<li><a href="#%E5%B8%B8%E8%A7%81%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E5%90%84%E6%9C%89%E4%BB%80%E4%B9%88%E7%89%B9%E7%82%B9">常见程序设计语言有哪几种？各有什么特点？</a></li>
+</ul>
+</li>
+<li><a href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0">第四章</a><br>
+*
+<ul>
+<li><a href="#%E6%AC%A7%E6%8B%89%E6%98%AF%E5%A6%82%E4%BD%95%E5%AF%B9%E6%A0%BC%E5%B0%BC%E6%96%AF%E5%A0%A1%E4%B8%83%E6%A1%A5%E9%97%AE%E9%A2%98%E8%BF%9B%E8%A1%8C%E6%8A%BD%E8%B1%A1%E7%9A%84">欧拉是如何对”格尼斯堡七桥问题“进行抽象的？</a></li>
+<li><a href="#%E7%AE%80%E8%BF%B0%E6%AC%A7%E6%8B%89%E5%9B%9E%E8%B7%AF%E4%B8%8E%E5%93%88%E5%AF%86%E5%B0%94%E9%A1%BF%E5%9B%9E%E8%B7%AF%E7%9A%84%E5%8C%BA%E5%88%AB">简述”欧拉回路“与”哈密尔顿回路“的区别</a></li>
+<li><a href="#%E4%BB%A5%E6%A2%B5%E5%A4%A9%E5%A1%94%E9%97%AE%E9%A2%98%E4%B8%BA%E4%BE%8B%E8%AF%B4%E6%98%8E%E7%90%86%E8%AE%BA%E4%B8%8A%E5%8F%AF%E8%A1%8C%E7%9A%84%E8%AE%A1%E7%AE%97%E9%97%AE%E9%A2%98%E5%AE%9E%E9%99%85%E4%B8%8A%E5%B9%B6%E4%B8%8D%E4%B8%80%E5%AE%9A%E8%83%BD%E8%A1%8C">以”梵天塔问题“为例，说明理论上可行的计算问题实际上并不一定能行</a></li>
+<li><a href="#%E4%BB%80%E4%B9%88%E6%98%AFnp%E9%97%AE%E9%A2%98%E5%B9%B6%E4%B8%BE%E4%BE%8B%E8%AF%B4%E6%98%8E">什么是NP问题？并举例说明。</a></li>
+<li><a href="#%E7%AE%80%E8%BF%B0%E4%B8%A4%E5%86%9B%E9%97%AE%E9%A2%98">简述”两军问题“</a></li>
+<li><a href="#%E4%B8%BE%E4%BE%8B%E8%AF%B4%E6%98%8E%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%AD%E7%9A%84%E5%8D%9A%E5%BC%88%E9%97%AE%E9%A2%98">举例说明计算机中的博弈问题</a></li>
+<li><a href="#%E5%A6%82%E4%BD%95%E4%BB%8E%E5%93%B2%E5%AD%A6%E8%A7%92%E5%BA%A6%E5%8F%8D%E6%98%A0%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%9C%AC%E8%B4%A8">如何从哲学角度反映人工智能的本质</a></li>
+</ul>
+</li>
+<li><a href="#%E7%AC%AC%E4%BA%94%E7%AB%A0">第五章</a><br>
+*
+<ul>
+<li><a href="#%E4%BB%80%E4%B9%88%E6%98%AF%E7%AE%97%E6%B3%95%E7%AE%97%E6%B3%95%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E8%A1%A8%E8%BE%BE%E6%96%B9%E6%B3%95">什么是算法？算法有哪几种表达方法？</a></li>
+<li><a href="#%E7%AE%80%E8%BF%B0%E9%80%92%E5%BD%92%E7%AE%97%E6%B3%95-%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95%E5%92%8C%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95%E7%9A%84%E7%89%B9%E7%82%B9">简述递归算法、回溯算法、贪心算法和分治算法的特点</a></li>
+<li><a href="#%E4%BB%80%E4%B9%88%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%B8%B8%E7%94%A8%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%9C%89%E5%93%AA%E4%BA%9B">什么数据结构？常用的数据结构有哪些？</a></li>
+<li><a href="#%E7%AE%80%E8%BF%B0%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B">简述数据库管理系统的发展历程</a></li>
+<li><a href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9A%84%E6%8B%93%E6%89%91%E7%BB%93%E6%9E%84%E6%9C%89%E5%93%AA%E4%BA%9B">计算机网络的拓扑结构有哪些？</a></li>
+<li><a href="#%E7%AE%80%E8%BF%B0osi%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B">简述OSI参考模型</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
 </div>
+
 <script>
-  let sidebarMeta = document.querySelector('#sidebarMeta');
-  let scheme = 'pisces';
-  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
-  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
-    document.addEventListener('scroll', function(e) {
-      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
-        sidebarWrapper.classList.add('home-sidebar-fixed')
-      } else {
-        sidebarWrapper.classList.remove('home-sidebar-fixed')
+
+  let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1;
+  let active = 'active-show', activeClass = 'active-current';
+  let tocWrapper = document.querySelector('#toc_wrapper');
+  let tocContent = tocWrapper.children[0];
+  let autoNumber = tocWrapper && tocWrapper.classList.contains('auto-number');
+
+  function addTocNumber(elem, deep) {
+    if (!elem) {
+      return;
+    }
+    let prop = elem.__proto__;
+
+    if (prop === HTMLUListElement.prototype) {
+      for (let i = 0; i < elem.children.length; i++) {
+        addTocNumber(elem.children[i], deep + (i + 1) + '.');
       }
+    } else if (prop === HTMLLIElement.prototype) {
+      // 保存li元素
+      if (elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
+        lList.push(elem);
+      }
+      for (let i = 0; i < elem.children.length; i++) {
+        let cur = elem.children[i];
+        if (cur.__proto__ === HTMLAnchorElement.prototype) {
+          if (autoNumber) {
+            cur.text = deep + ' ' + cur.text;
+          }
+        } else if (cur.__proto__ === HTMLUListElement.prototype) {
+          addTocNumber(cur, deep);
+        }
+      }
+    }
+  }
+
+  function removeParentActiveClass() {
+    let parents = tocContent.querySelectorAll('.' + active)
+    parents.forEach(function (elem) {
+      elem.classList.remove(active);
     });
   }
-  </script>
-        <div class="section-box box-shadow-wrapper">
-          <section class="section tags-section bg-color posts-expand">
-            <div class="tags-box">
-  <div class="tag-cloud-title">
-    目前共计 0 个标签
-  </div>
-  <div class="tag-cloud-list" id="tags">
-    
-  </div>
-</div>
-<script>
 
-  let fontStart = 12, fontEnd = 30, colorStart = '#666', colorEnd = '#000';
-  let tags = document.querySelector('#tags').children;
-  let counts = [];
-  for(let i = 0; i < tags.length; i++) {
-    counts.push(tags[i].rel);
-  }
-  let lowest = Math.min.apply(null,counts), highest = Math.max.apply(null,counts);;
-  let range = highest - lowest;
-  if (range === 0) {
-    range = 1;
-  }
-  let fontIncr, colorIncr;
-  fontIncr = (fontEnd - fontStart) / range;
-  
-  let sColorArr = toRGB(colorStart), eColorArr = toRGB(colorEnd);
-
-  for(let i = 0; i < tags.length; i++) {
-    let disCount = tags[i].rel - lowest;
-    let fontSize = fontStart + disCount * fontIncr;
-    let style = 'font-size: ' + fontSize + 'px;';
-    let arr = [];
-    for(let c = 0; c < sColorArr.length; c++) {
-      if (disCount === 0) {
-        disCount = 1;
-      }
-      let val = (sColorArr[c] - eColorArr[c]) / range * disCount;
-      if (val >= 100) {
-        val = eColorArr[c];
-      } else if (val <= 0) {
-        val = sColorArr[c];
-      }
-      arr[c] = Math.floor(val);
+  function addActiveClass(index) {
+    if (index >= 0 && index < hList.length) {
+      lList[index].classList.add(activeClass);
     }
-    style += 'color: ' + toHex(arr);
-    tags[i].style = style;
   }
 
-  function toRGB(code) {
-    if (code.length === 4) {
-      code = code.replace(/(\w)(\w)(\w)/gi, "\$1\$1\$2\$2\$3\$3");
+  function removeActiveClass(index) {
+    if (index >= 0 && index < hList.length) {
+      lList[index].classList.remove(activeClass);
     }
-    var hex = /(\w{2})(\w{2})(\w{2})/.exec(code);
-    return [parseInt(hex[1], 16), parseInt(hex[2], 16), parseInt(hex[3], 16)];
   }
 
-  function toHex(ary) {
-    return "#" + ((1 << 24) + (ary[0] << 16) + (ary[1] << 8) + ary[2]).toString(16).slice(1);
+  function addActiveLiElemment(elem, parent) {
+    if (!elem || elem === parent) {
+      return;
+    } else {
+      if (elem.__proto__ === HTMLLIElement.prototype) {
+        elem.classList.add(active);
+      }
+      addActiveLiElemment(elem.parentElement, parent);
+    }
   }
+
+  function showToc() {
+    if (tocWrapper) {
+      postBody = document.querySelector('#post_body');
+      for (let i = 0; i < postBody.children.length; i++) {
+        if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+          hList.push(postBody.children[i]);
+        }
+      }
+      if (tocWrapper.classList.contains('compress')) {
+        tocContent.classList.add('closed');
+      } else if (tocWrapper.classList.contains('no_compress')) {
+        tocContent.classList.add('expanded');
+      } else {
+        if (hList.length > 10) {
+          active = 'active-hidden'
+          tocContent.classList.add('closed');
+        } else {
+          tocContent.classList.add('expanded');
+        }
+      }
+    }
+  }
+
+  (function () {
+    // 处理不是从#一级标题开始目录
+    if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
+      let con = tocContent.children[0].children[0];
+      tocContent.innerHTML = con.innerHTML;
+    }
+    let markdownItTOC = document.querySelector('.markdownIt-TOC');
+    let innerHeight = window.innerHeight;
+    markdownItTOC.style = `max-height: ${innerHeight - 80 > 0 ? innerHeight - 80 : innerHeight}px`
+    addTocNumber(tocContent, '');
+  })();
+
+  document.addEventListener('scroll', function (e) {
+    if (lList.length <= 0) {
+      return;
+    }
+    let scrollTop = document.scrollingElement.scrollTop + 10;
+    let dir;
+
+    if (lastTop - scrollTop > 0) {
+      dir = 'up';
+    } else {
+      dir = 'down';
+    }
+
+    lastTop = scrollTop;
+    if (scrollTop <= 0) {
+      if (lastIndex >= 0 && lastIndex < hList.length) {
+        lList[lastIndex].classList.remove(activeClass);
+      }
+      return;
+    }
+
+    let current = 0, hasFind = false;
+    for (let i = 0; i < hList.length; i++) {
+      if (hList[i].offsetTop > scrollTop) {
+        current = i;
+        hasFind = true;
+        break;
+      }
+    }
+    if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+      current = hList.length - 1;
+    } else {
+      current--;
+    }
+    if (dir === 'down') {
+      if (current > lastIndex) {
+        addActiveClass(current);
+        removeActiveClass(lastIndex)
+        lastIndex = current;
+        removeParentActiveClass();
+        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
+      }
+    } else {
+      if (current < lastIndex) {
+        addActiveClass(current);
+        removeActiveClass(lastIndex);
+        lastIndex = current;
+        removeParentActiveClass();
+        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
+      }
+    }
+  });
+
+
+  window.addEventListener('load', function () {
+    showToc();
+    document.querySelector('#sidebar').style = 'display: block;';
+    tocWrapper.classList.add('toc-active');
+    setTimeout(function () {
+      if ("createEvent" in document) {
+        let evt = document.createEvent("HTMLEvents");
+        evt.initEvent("scroll", false, true);
+        document.dispatchEvent(evt);
+      }
+      else {
+        document.fireEvent("scroll");
+      }
+    }, 500)
+  })
 
 </script>
-          </section>
+            </div>
+          
+        
+      </div>
+    </div>
+  
+</div>
+<script>
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+  }
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+        <div class="section-box box-shadow-wrapper">
+          <div class="section bg-color post post-page">
+            <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://tjx158589.github.io/post/elbtsnl8g/">
+      计算机导论期末复习资料
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2021-01-26</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>10分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>2667<span class="pc-show">字数</span></span>
+    </span>
+    
+    
+    
+    <span id="/post/elbtsnl8g/" data-flag-title="计算机导论期末复习资料" class="meta-item pc-show leancloud_visitors">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-eye"></i>
+      <span>浏览量：<span class="leancloud-visitors-count"></span></span>
+    </span>
+    
+  </div>
+</header>
+            <div class="post-body next-md-body" id="post_body">
+              <h2 id="第一章">第一章</h2>
+<h4 id="讲述计算机的发展历程">讲述计算机的发展历程</h4>
+<ol>
+<li>
+<p>机械计算器（1930以前）</p>
+</li>
+<li>
+<p>电子计算机的诞生（1930-1950）</p>
+<ol>
+<li>早起电子计算机</li>
+<li>基于冯洛伊曼模型的计算机</li>
+</ol>
+</li>
+<li>
+<p>计算机的诞生（1950—今）</p>
+</li>
+</ol>
+<h4 id="计算机有哪些特点">计算机有哪些特点</h4>
+<ol>
+<li>快速的运算能力</li>
+<li>足够高的计算精度</li>
+<li>复杂的逻辑判断能力</li>
+<li>按程序自动工作的能力</li>
+</ol>
+<h4 id="简述计算机科学的定义及其根本问题">简述计算机科学的定义及其根本问题</h4>
+<ol>
+<li>定义：信息处理的机器。信息的传输、储存、加工的机器</li>
+<li>根本问题
+<ol>
+<li>理论：理论是数学科学的根本。</li>
+<li>抽象：抽象（模型化）是自然科学的根本。</li>
+<li>设计：设计是工程的根本。</li>
+</ol>
+</li>
+</ol>
+<h4 id="简述计算机科学与技术专业知识体系">简述计算机科学与技术专业知识体系</h4>
+<p>​		数学基础、编程语言、编程思想、数据结构、算法能力、计算机网络、操作系统、数据库、编译原理、计算机组成</p>
+<h4 id="简述计算机科学与技术学科的三个学科形态">简述计算机科学与技术学科的三个学科形态</h4>
+<ol>
+<li>理论：理论是数学科学的根本。</li>
+<li>抽象：抽象（模型化）是自然科学的根本。</li>
+<li>设计：设计是工程的根本。</li>
+</ol>
+<h2 id="第二章">第二章</h2>
+<h4 id="简述图灵机模型的基本思想">简述图灵机模型的基本思想</h4>
+<p>图灵的基本思想是用机器来模拟人们用纸笔进行数学运算的过程，他把这样的过程看作下列两种简单的动作:</p>
+<ol>
+<li>在纸上写上或擦除某个符号;</li>
+<li>把注意力从纸的一个位置移动到另一个位置;</li>
+</ol>
+<h4 id="简述冯诺依曼型计算机的基本思想">简述冯诺依曼型计算机的基本思想</h4>
+<ol>
+<li>计算机应该由运算器、控制器、存储器、输入设备和输出设备五个基本部件组成。</li>
+<li>各个基本部件的功能是：
+<ol>
+<li>存储器不仅能存放数据，也能存放指令，形式上两者没有区别，但计算机应能区分数据还是指令；</li>
+<li>控制器应能自动取出指令来执行</li>
+<li>运算器应能进行加减乘除四种基本算术运算，并且也能进行一些逻辑运算和附加运算；</li>
+<li>操作人员可以通过输入设备、输出设备和主机进行通信。</li>
+</ol>
+</li>
+<li>内部以二进制表示指令和数据。每条指令由操作码和地址码两部分组成。操作码指出操作类型（加、减法、跳转、传送等），地址码指出操作数的地址。由一串指令组成程序。</li>
+</ol>
+<p>4.采用“存储程序”工作方式。</p>
+<h4 id="汉字编码有哪几类列出几种常见的输入码">汉字编码有哪几类？列出几种常见的输入码</h4>
+<ol>
+<li>
+<p>外码、交换码、机内码、字形码和地址码</p>
+</li>
+<li>
+<p>常见输入码</p>
+<p>拼音码、五笔字型码、自然码、表形码、认知码、区位码和电报码</p>
+</li>
+</ol>
+<h4 id="定点表示法和浮点表示法各有什么特点">定点表示法和浮点表示法各有什么特点</h4>
+<ol>
+<li>定点表示法：指小数点在数中的位置是固定不变的，通常有定点整数和定点小数。</li>
+<li>浮点表示法：浮点数中小数点的位置是不固定的，用阶码和尾数来表示。</li>
+</ol>
+<h4 id="为什么说计算机中用补码做加减运算最简单">为什么说计算机中用补码做加减运算最简单</h4>
+<p>因为使用补码可以只是使用加法运算就可以实现加减运算</p>
+<h4 id="收集资料了解图灵机模型的主要应用领域有哪些">收集资料，了解图灵机模型的主要应用领域有哪些</h4>
+<h2 id="第三章">第三章</h2>
+<h4 id="计算机系统由哪几大部分组成各部分有什么功能">计算机系统由哪几大部分组成？各部分有什么功能？</h4>
+<p>1、控制器：计算机的控制系统</p>
+<p>2、运算器：计算机的运算系统</p>
+<p>3、存储器：计算机存储系统</p>
+<p>4、输入设备</p>
+<p>5、输出设备</p>
+<h4 id="中央处理器在计算机工作过程中起什么作用">中央处理器在计算机工作过程中起什么作用？</h4>
+<p>运算和控制核心，是信息处理、程序运行的最终执行单元。</p>
+<h4 id="什么是输入输出设备举例常见的输入输出设备">什么是输入输出设备？举例常见的输入输出设备。</h4>
+<p>是数据处理系统的关键外部设备之一，可以和计算机本体进行交互使用。</p>
+<p>输入设备：向计算机输入数据和信息的设备</p>
+<p>输出设备：把计算或处理的结果或中间结果以人能识别的各种形式</p>
+<p>鼠标、键盘、显示屏、音响</p>
+<h4 id="冯诺依曼体系结构的计算机由哪几大部分组成它的工作原理是什么">冯诺依曼体系结构的计算机由哪几大部分组成？它的工作原理是什么？</h4>
+<p>1、输入数据和程序的“输入设备”；</p>
+<p>2、记忆程序和数据的“存储器”；</p>
+<p>3、完成数据加工处理的“运算器”；</p>
+<p>4、控制程序执行的“控制器”；</p>
+<p>5、输出处理结果的“输出设备”。</p>
+<p>工作原理主要分为存储程序和程序控制，预先要把控制计算机如何进行操作的指令序列【称为程序】和原始数据通过输入设备输送到计算机内存中，每一条指令中明确规定了计算机从哪个地址取数，进行什么操作，然后送到什么地址去等步骤。</p>
+<h4 id="现代提出的非冯诺依曼计算机体系结构有哪些">现代提出的非冯诺依曼计算机体系结构有哪些？</h4>
+<ol>
+<li>零指令集计算机</li>
+<li>哈佛架构</li>
+</ol>
+<h4 id="系统总线按功能分可以分为哪几类各有什么功能">系统总线按功能分可以分为哪几类？各有什么功能？</h4>
+<ol>
+<li>数据总线：在CPU与RAM之间来回传送需要处理或是需要储存的数据。</li>
+<li>地址总线：用来指定在RAM（Random Access Memory）之中储存的数据的地址。</li>
+<li>控制总线：将微处理器控制单元（Control Unit）的信号，传送到周边设备。</li>
+<li>扩展总线：外部设备和计算机主机进行数据通信的总线，例如ISA总线，PCI总线。</li>
+<li>局部总线</li>
+</ol>
+<h4 id="简述什么是操作系统-它的功能有哪些">简述什么是操作系统。它的功能有哪些？</h4>
+<p>是管理计算机硬件]与软件资源的计算机程序。</p>
+<ol>
+<li>进程管理</li>
+<li>存储管理</li>
+<li>设备管理</li>
+<li>文件管理</li>
+<li>作业管理</li>
+</ol>
+<h4 id="什么是软件危机什么是软件工程软件工程过程是什么">什么是软件危机？什么是软件工程？软件工程过程是什么？</h4>
+<ol>
+<li>指落后的软件生产方式无法满足迅速增长的计算机软件需求，从而导致软件开发与维护过程中出现一系列严重问题的现象。</li>
+<li>软件工程是一门研究用工程化方法构建和维护有效的、实用的和高质量的软件的学科。它涉及程序设计语言、数据库、软件开发工具、系统平台、标准、设计模式等方面。</li>
+<li>有瀑布模型、螺旋模型、增量模型、原型模型和RUP模型。</li>
+</ol>
+<h4 id="软件工程遵循哪些原则">软件工程遵循哪些原则</h4>
+<ol>
+<li>确定性：软件开发过程中所有概念的表达应是确定的、无歧义性的、规范的。</li>
+<li>一致性：整个软件系统使用一致的概念、符号和术语。</li>
+<li>完备性：软件系统不丢失任何重要成分，可以完全实现系统所要求功能的程度。</li>
+<li>可验证性：易于检查、测试、评审，确保系统的正确性。</li>
+</ol>
+<h4 id="常见程序设计语言有哪几种各有什么特点">常见程序设计语言有哪几种？各有什么特点？</h4>
+<ol>
+<li>机器语言：是最低级的语言，是由二进制码组成，是最早期的一种程序语言</li>
+<li>汇编语言：用助记符和地址符代替了二进制码，更易于编写</li>
+<li>高级语言：相对于汇编语言又上升了一步，更接近于自然语言，如C语言、Pascal、Java、C#等都是高级语言。</li>
+</ol>
+<h2 id="第四章">第四章</h2>
+<h4 id="欧拉是如何对格尼斯堡七桥问题进行抽象的">欧拉是如何对”格尼斯堡七桥问题“进行抽象的？</h4>
+<p>原始问题：“是否能从某块陆地出发，经过每座桥恰好一次，最后回到出发点？”<br>
+抽象成数据模型：“是否能从图中的某个图出发，经过每条边恰好一次，最后回到出发节点？”<br>
+欧拉转化：“该图是否存在欧拉回路？”</p>
+<h4 id="简述欧拉回路与哈密尔顿回路的区别">简述”欧拉回路“与”哈密尔顿回路“的区别</h4>
+<p>从一个顶点出发每条边恰好经过一次，再回到出发点的巡回（闭通路）叫欧拉巡回，含有欧拉巡回的图叫欧拉图。</p>
+<p>从一个顶点出发每个顶点恰好经过一次，再回到出发点的圈叫哈密尔顿圈，含哈密尔顿圈的图叫哈密尔顿图</p>
+<p>区别欧拉回路是恰好每条边都经过一次，而哈密尔顿是恰好每个顶点都经过</p>
+<h4 id="以梵天塔问题为例说明理论上可行的计算问题实际上并不一定能行">以”梵天塔问题“为例，说明理论上可行的计算问题实际上并不一定能行</h4>
+<h4 id="什么是np问题并举例说明">什么是NP问题？并举例说明。</h4>
+<p>可以在多项式时间内验证的问题称为NP问题</p>
+<p>举例：哈密尔顿回路问题、TSP问题、顶点覆盖问题</p>
+<h4 id="简述两军问题">简述”两军问题“</h4>
+<p>两个将军 A1 和 A2 决定攻打同一个敌人 B ，任一方都没有敌人强大，所以只有共同进攻才有胜算。敌军正好位于两个将军之间，意味着信使可能会被敌军抓住。两军问题指的就是在这样的条件下两个将军如何就是否进攻达成共识</p>
+<p>网络中用TCP的三次握手来解决这个问题</p>
+<h4 id="举例说明计算机中的博弈问题">举例说明计算机中的博弈问题</h4>
+<p>博弈树搜索</p>
+<p>中国象棋机器博弈</p>
+<h4 id="如何从哲学角度反映人工智能的本质">如何从哲学角度反映人工智能的本质</h4>
+<p>图灵测试揭示计算本质那样揭示人类思维的本质，即能行思维。<br>
+中文屋子，形式化计算机仅有的语法，没有语意。因此，计算机永远也不可能代替人脑。</p>
+<h2 id="第五章">第五章</h2>
+<h4 id="什么是算法算法有哪几种表达方法">什么是算法？算法有哪几种表达方法？</h4>
+<p>算法（baiAlgorithm）是指解题du方案的准确而完zhi整的描述，是一系列解决dao问题的清晰指令zhuan，算法代shu表着用系统的方法描述解决问题的策略机制。</p>
+<p>自然语言、伪代码、流程图等表达</p>
+<h4 id="简述递归算法-回溯算法-贪心算法和分治算法的特点">简述递归算法、回溯算法、贪心算法和分治算法的特点</h4>
+<h4 id="什么数据结构常用的数据结构有哪些">什么数据结构？常用的数据结构有哪些？</h4>
+<p>是计算机存储、组织数据的方式</p>
+<p>链表、树、堆、栈图、数组等</p>
+<h4 id="简述数据库管理系统的发展历程">简述数据库管理系统的发展历程</h4>
+<h4 id="计算机网络的拓扑结构有哪些">计算机网络的拓扑结构有哪些？</h4>
+<p>总线型结构、星型结构、环形结构、树型结构和网状结构。</p>
+<h4 id="简述osi参考模型">简述OSI参考模型</h4>
+<ol>
+<li>物理层：链路上比特流传输；</li>
+<li>数据链路层：网络内部帧的传输；</li>
+<li>网络层：网间两点间可达性；</li>
+<li>传输层：保证端到端的传输；</li>
+<li>会话层：会话的控制；</li>
+<li>表示层：数据的表达及数据格式的转换</li>
+<li>应用层：为用户具体应用服务。</li>
+</ol>
+
+            </div>
+            <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      toby
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://tjx158589.github.io/post/elbtsnl8g/" title="计算机导论期末复习资料">https://tjx158589.github.io/post/elbtsnl8g/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" title="arp欺骗+Driftnet 局域网截取照片" href="https://tjx158589.github.io/post/cD7xvp1nC/">arp欺骗+Driftnet 局域网截取照片</a>
+        <a class="nav-mobile-next" title="arp欺骗+Driftnet 局域网截取照片" href="https://tjx158589.github.io/post/cD7xvp1nC/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
+      
+    </div>
+  </div>
+</div>
+            
+  <script src="https://cdn.jsdelivr.net/npm/valine@1.4.4/dist/Valine.min.js"></script>
+<div id="vcomments" style="padding: 10px 0px 0px 0px"></div>
+
+<style>
+  .v .veditor {
+    min-height: 10rem;
+    background-image: url('https://upimage.alexhchu.com/2020/04/21/47eda59424daa.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: rgba(255, 255, 255, 0);
+    resize: none;
+  }
+
+  .v .vwrap {
+    border: 1px solid #000 !important;
+  }
+
+  .v .vbtn {
+    padding: .4rem 1.2rem !important;
+    border-color: #fff !important;
+    background-color: #49b1f5 !important;
+    color: #fff !important;
+    font-size: .7rem !important;
+  }
+
+  .v .vcards .vcard .vh .vmeta .vat {
+    padding: 0 .8rem !important;
+    border: 1px solid #00c4b6 !important;
+    border-radius: 5px !important;
+    color: #00c4b6 !important;
+  }
+</style>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: 'miX2efxX7x2SHYDvGqOrJ04V-gzGzoHsz',
+    appKey: 'cNYcgoGQkE1LL8MLjrqRNbts',
+    avatar: 'robohash',
+    placeholder: '',
+    pageSize: '',
+    lang: 'zh-cn',
+    visitor: 'true' === 'true',
+    highlight: 'true' === 'true',
+    avatarForce: 'true' === 'false',
+  });
+</script>
+
+          </div>
         </div>
       </div>
     </div>
@@ -521,6 +1099,36 @@
   // 代码高亮
   hljs.initHighlightingOnLoad();
 
+</script>
+    <div class="light-box" id="light_box"></div>
+<script>
+  let imgs = document.querySelectorAll('.post-body img');
+  let lightBox = document.querySelector('#light_box');
+  lightBox.addEventListener('mousedown', (e) => {
+    e.preventDefault()
+  })
+  lightBox.addEventListener('mousewheel', (e) => {
+    e.preventDefault()
+  })
+  let width = window.innerWidth * 0.8;
+  lightBox.onclick = () => {
+    let img = lightBox.querySelector('img');
+    lightBox.style = '';
+    img && img.remove();
+  }
+  imgs.forEach(item => {
+    item.onclick = function (e) {
+      let lightImg = document.createElement('img');
+      lightImg.src = this.src;
+      lightBox.style = `height: 100%; opacity: 1; background-color: rgba(0, 0, 0, 0.5);cursor: zoom-out;`;
+      lightImg.style = `width: ${width}px; border: 1px solid #fff; border-radius: 2px;`;
+      lightImg.onclick = function () {
+        lightBox.style = '';
+        this.remove();
+      }
+      lightBox.append(lightImg);
+    }
+  })
 </script>
   </div>
 </body>
@@ -1200,6 +1808,5 @@ git push -u origin master
 
 
 <script src=" /media/js/cool.js"></script>
-
 
 </html>
