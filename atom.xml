@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tjx158589.github.io</id>
     <title>toby的博客</title>
-    <updated>2021-01-26T03:46:05.024Z</updated>
+    <updated>2021-01-26T03:48:03.074Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tjx158589.github.io"/>
     <link rel="self" href="https://tjx158589.github.io/atom.xml"/>
@@ -16,6 +16,44 @@
         <link href="https://tjx158589.github.io/post/elbtsnl8g/">
         </link>
         <updated>2021-01-26T03:43:42.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="第一章">第一章</h2>
+<h4 id="讲述计算机的发展历程">讲述计算机的发展历程</h4>
+<ol>
+<li>
+<p>机械计算器（1930以前）</p>
+</li>
+<li>
+<p>电子计算机的诞生（1930-1950）</p>
+<ol>
+<li>早起电子计算机</li>
+<li>基于冯洛伊曼模型的计算机</li>
+</ol>
+</li>
+<li>
+<p>计算机的诞生（1950—今）</p>
+</li>
+</ol>
+<h4 id="计算机有哪些特点">计算机有哪些特点</h4>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="第一章">第一章</h2>
+<h4 id="讲述计算机的发展历程">讲述计算机的发展历程</h4>
+<ol>
+<li>
+<p>机械计算器（1930以前）</p>
+</li>
+<li>
+<p>电子计算机的诞生（1930-1950）</p>
+<ol>
+<li>早起电子计算机</li>
+<li>基于冯洛伊曼模型的计算机</li>
+</ol>
+</li>
+<li>
+<p>计算机的诞生（1950—今）</p>
+</li>
+</ol>
+<h4 id="计算机有哪些特点">计算机有哪些特点</h4>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[arp欺骗+Driftnet 局域网截取照片]]></title>
